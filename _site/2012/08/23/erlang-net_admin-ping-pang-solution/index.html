@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Erlang本地通过net_adm:ping远程节点一直返回pang解决办法</title>
+  <meta name="description" content="一直有个问题没解决，本地节点直接可以通过net_adm:ping相互连通，但是本地一直都无法通过此方式连接到远程的服务器上的节点。">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://www.aixixili.com/2012/08/23/erlang-net_admin-ping-pang-solution/">
+  <link rel="alternate" type="application/rss+xml" title="" href="http://www.aixixili.com/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/"></a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+          <a class="page-link" href="/index.html">李攀的博客</a>
+          
+        
+          
+          <a class="page-link" href="/about/index.html">关于李攀</a>
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Erlang本地通过net_adm:ping远程节点一直返回pang解决办法</h1>
+    <p class="post-meta">Aug 23, 2012 • admin</p>
+  </header>
+
+  <article class="post-content">
+    <p>一直有个问题没解决，本地节点直接可以通过net_adm:ping相互连通，但是本地一直都无法通过此方式连接到远程的服务器上的节点。</p>
+
+<p>yufeng有篇<a href="http://blog.yufeng.info/archives/2169">文章</a>是说这个问题，我读了至少3遍，但都没解决的这个问题。</p>
+
+<p>今天发现原来是远程服务器防火墙的问题，其实yufeng在上述文章中已经提到可能是此原因，之前没有认真分析，浪费了不少时间。</p>
+
+<blockquote>
+  <p>首先从原理上分析下!由于erlang节点间通讯是透过tcp来进行的，所以我们确保以下几点：<br />
+1. 确保网络连接是通的，可以透过ping来查看。<br />
+2. 确保网络连接上tcp是可以通的，可以透过netcat在二个节点所在的机器上分别开个服务器端和客户端进行验证。<br />
+3. 确保端口是防火墙友好的。erlang的节点是登记在epmd服务上的，所以4369端口要能访问，其次节点的动态端口是可以访问的。</p>
+
+  <blockquote>
+    <p>epmd -names<br />
+epmd: up and running on port 4369 with data:<br />
+name xx at port 46627<br />
+…</p>
+  </blockquote>
+
+  <p>同样可以用netcat来验证。<br />
+4. erlang节点的cookie是一样的，可以透过setcookie来解决。</p>
+</blockquote>
+
+<p>我的问题就出在3上。</p>
+
+<p>于是乎：<br />
+到/etc/sysconfig下修改iptables，增加<br />
+-A RH-Firewall-1-INPUT -p tcp -m state –state NEW -m tcp –dport 4369 -j ACCEPT<br />
+-A RH-Firewall-1-INPUT -p tcp -m state –state NEW -m tcp –dport 动态端口号 -j ACCEPT<br />
+然后<br />
+service iptables restart<br />
+然后从本机net_adm:ping，于是看到了可爱的pong，从此可以用observer:start()监控远程服务器的状态了。</p>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading"></h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li></li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">别有妖妍胜桃李,攀来折去亦成蹊。
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

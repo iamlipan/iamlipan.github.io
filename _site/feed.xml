@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>别有妖妍胜桃李,攀来折去亦成蹊。
+</description>
+    <link>http://www.aixixili.com/</link>
+    <atom:link href="http://www.aixixili.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 12 May 2015 11:46:12 +0800</pubDate>
+    <lastBuildDate>Tue, 12 May 2015 11:46:12 +0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>聚会玩内部WIFI解决方案</title>
+        <description>&lt;p&gt;很早之前就早网上看到过豌豆荚创业初期遇到的公司内部网络问题（http://www.36kr.com/p/207783.html），没想到聚会玩也没法避免。结合我们的实际情况，说一下我们的问题和解决方案。&lt;/p&gt;
+
+&lt;p&gt;聚会玩最初&amp;lt;5个人的时候，在一个民宅的客厅里面办公，当时客厅还算大，大伙儿吃喝起居办公都在客厅里面，一台TP-link的路由器也没有遇到任何问题，算是一个典型的单AP家庭式网络环境。&lt;br /&gt;
+慢慢的，聚会玩人多了，我们搬进了一个专门办公的民居，当时的人数不超过10人，我们听朋友的建议买了一个据说很牛逼的路由器，NetGear WNR2000v3，看着就很酷的样子，除了内部某台机器提交应用上传AppStore的时候会导致大家都断网以外，其他都没什么问题。&lt;br /&gt;
+聚会玩发展太好了，过了半年，这个民居坐不下了，我们搬到了一个三室一厅的商住两用套房里。这时我们的人数超过了10人，为了让大家不受上传AppStore时会断网的影响，我们将路由器省级到了Huawei WS880千兆路由器，千兆，一听就很牛逼。但随着人数慢慢增长（写这篇文章时我们是13人），又因为我们是移动互联网公司，加上测试机平均人手近3台移动网络设备，渐渐地，我们发现有些同学电脑时不时会掉线。开始，我们以为我们统一配备的电脑无线网卡出了问题，但是换新网卡后仍得不到解决，并且掉线的情况发生的频率越来越大，会随机在各种机器上出现。于是，我们认为我们被华为路由器坑了，一个网段理论上有255个ip地址，怎么连30几台设备就不行了呢？于是我们找到了华为的客服，客服GG是个工程师，毫不留情的说这个设备总共只能支持16台设备，我们已经连了30台，已经很幸运了！我擦，颠覆了偶的世界观，一台路由器只能连这么点设备，那些ip地址用来看的啊……不过这时我们可以解释为什么大家会断网，因为新的设备连接进来，把老设备挤下去了。客服告诉我们想连接新设备，可以打开Guest模式，这样可以多连16台设备。于是，我们的问题算是解决了。但是也明白了，一个AP能承受的连接数不是255，而是30个左右，也许能连接上更多，但是会出现掉线或者速度慢的情况。&lt;/p&gt;
+
+&lt;p&gt;为了分担WS880的的压力，我们尝试把之前的WNR2000v3也拿出来一起使用，WS880的5GHz和2.4GHz两个频段分别打开Guest，加上WNR2000v3也打开Guest，再加上电信的ChinaNet路由器，我们的网络数达到了7个，看着网络列表就觉得高大上。随后，问题马上来了，大家慢慢觉得网络特别慢，又出现了经常断线的情况，之前的问题貌似又出现了，why？&lt;/p&gt;
+
+&lt;p&gt;我们都知道常用的Wi-Fi频率有两个：2.4GHz和5GHz，先说2.4GHz，大多数 PC只支持2.4GHz，这是一个相对拥挤的信道，只能使用1、6、11三个非重叠信道才不会发生干扰。三个信道意味着在一个 AP信号覆盖的范围内，不能超过三个热点，否则就会发生干扰。现在我们正好有3个AP，而且我们使用的时auto信道，默认都是6，所以三个AP之间的干扰可想有多严重。于是，我们把三个AP的信道分别改成了1，6，11，这样相互之间就没有了干扰，另外，并不网络热点越多越好，热点之间也是有干扰的，于是我们关闭了WS880的Guest网络，仅保留了WNR2000v3的Guest，这样我们还剩5个网络，在不同的信道。最后，由于关掉了WS880的Guest网络，剩下的问题就是如何解决设备太多导致不断掉线的问题，我们是按照设备优先级来解决的。我们认为办公电脑的优先级是最高的，所以我们尽让电脑链接WS880，这个AP连的设备数是可控的，可以保证工作电脑不会掉线。然后我们强制让所有的移动设备连接WNR2000v3，由于在公司大家几乎都用电脑上网，移动设备对断网的敏感度不高，所以即使移动设备超过了WNR2000v3的最大连接数，也不会有太大的问题，因为大多数的移动设备是“休眠”的。此外，这样做可以很方便的做移动设备网络的带宽限制，保证工作电脑的带宽。&lt;/p&gt;
+
+&lt;p&gt;所以，通过多AP，信道分离，强制连接分流，我们做到了目前状态下的内部wifi的稳定。&lt;/p&gt;
+
+&lt;p&gt;另外，我们工作时用到了共享网盘，当几十个渠道包一打出来，大家都同时同步到本地时，我们的带宽几乎就全被吃掉了，导致上网速度特别慢。我们通过在内部AP上接外接USB移动硬盘的方式搭建了内网大文件贡献，所有的大文件都不再走外网流量，不占用公司带宽资源，大家的上网速度不会有影响，这个涉及带宽的解决方案了，下次有时间再写。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 27 Nov 2014 00:00:00 +0800</pubDate>
+        <link>http://www.aixixili.com/2014/11/27/%e8%81%9a%e4%bc%9a%e7%8e%a9%e5%86%85%e9%83%a8wifi%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88/</link>
+        <guid isPermaLink="true">http://www.aixixili.com/2014/11/27/%e8%81%9a%e4%bc%9a%e7%8e%a9%e5%86%85%e9%83%a8wifi%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88/</guid>
+        
+        
+        <category>工作</category>
+        
+      </item>
+    
+      <item>
+        <title>聚会玩上线</title>
+        <description>&lt;p&gt;好事多磨，经过三个月的磕磕碰碰，&lt;a title=&quot;聚会玩&quot; href=&quot;http://juhuiwan.cn&quot; target=&quot;_blank&quot;&gt;聚会玩&lt;/a&gt;昨天终于通过苹果App Store审核，正式上线了！&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;聚会玩&quot; href=&quot;https://itunes.apple.com/cn/app/ju-hui-wan-shui-shi-wo-di/id661983515&quot; target=&quot;_blank&quot;&gt;下载地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;以下是介绍：&lt;/p&gt;
+
+&lt;p&gt;聚会玩-谁是卧底,聚会游戏&lt;/p&gt;
+
+&lt;p&gt;首款专注于聚会游戏的应用——聚会玩V1.0正式上线，限时免费前购买即可获得600额外词库，更可永久免费享受所有游戏、功能及词库更新。&lt;/p&gt;
+
+&lt;p&gt;史上体验最好的“谁是卧底”就在聚会玩！如果你看快乐大本营，玩谁是卧底，千万别错过聚会玩：&lt;br /&gt;
+-独创场景分类：根据词语不同特性进行分类，确保词语更对你的味！&lt;br /&gt;
+-即时照相：看词同时拍照，绝对意想不到！投票时再也不用纠结号码，并且还可以将照片分享，让没有参加聚会的人羡慕嫉妒恨去吧！&lt;br /&gt;
+-忘词功能：记性不好？没关系，试试“忘词了”，旁观者也可随时了解战况！&lt;/p&gt;
+
+&lt;p&gt;如果你患有以下聚会综合征，总是不知道聚会玩什么，聚会玩很乐意成为你的好帮手，让你和朋友轻松享受聚会乐趣。&lt;/p&gt;
+
+&lt;p&gt;你是否是聚会“低头族”？大家聚一起却各自刷微博，一个个都像患上了“失语症”。&lt;br /&gt;
+你是否是桌游“日抛族”？每次聚会有人提议买扑克、桌游，最后都成了家中摆设。&lt;br /&gt;
+······&lt;br /&gt;
+受够了聚会不知道玩什么？&lt;br /&gt;
+受够了忍耐一群人的孤独？&lt;br /&gt;
+想重拾和朋友聚会的乐趣？&lt;br /&gt;
+你只需把这些问题都交给聚会玩，即可开启一个线下聚会游戏的宝库：谁是卧底、杀人游戏、狼人杀、一愚惊人······并且：&lt;br /&gt;
+-一个应用多个游戏，比桌游强大，比桌游便宜&lt;br /&gt;
+-玩法简单，老少皆宜，只要识字就能享受游戏乐趣&lt;br /&gt;
+-无需裁判，人数不够的尴尬再也不会发生&lt;br /&gt;
+-不断更新的精选海量词库，准备好迎接千词大考验吧&lt;/p&gt;
+
+&lt;p&gt;还在等什么？拥有聚会玩，随时随地和好友享受游戏的乐趣吧！&lt;/p&gt;
+
+&lt;div style=&quot;width: 650px&quot; class=&quot;wp-caption alignnone&quot;&gt;
+  &lt;a href=&quot;http://juhuiwan.cn&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://pic.yupoo.com/aixixili/D1P8GfJ1/otSsa.png&quot; width=&quot;640&quot; height=&quot;960&quot; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    聚会玩&lt;span style=&quot;line-height: 1.714285714; color: #444444; font-size: 1rem;&quot;&gt;&lt;a href=&quot;http://juhuiwan.cn&quot;&gt;&lt;img class=&quot;alignnone&quot; alt=&quot;&quot; src=&quot;http://pic.yupoo.com/aixixili/D1P9ST0g/14oj1y.png&quot; width=&quot;640&quot; height=&quot;1136&quot; /&gt;&lt;/a&gt;&lt;/span&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://juhuiwan.cn&quot;&gt;&lt;img class=&quot;alignnone&quot; alt=&quot;&quot; src=&quot;http://pic.yupoo.com/aixixili/D1P9ST0g/14oj1y.png&quot; width=&quot;640&quot; height=&quot;1136&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://juhuiwan.cn&quot;&gt;&lt;img class=&quot;alignnone&quot; alt=&quot;&quot; src=&quot;http://pic.yupoo.com/aixixili/D1P9Q8GA/nBXhN.png&quot; width=&quot;640&quot; height=&quot;1136&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://juhuiwan.cn&quot;&gt;&lt;img class=&quot;alignnone&quot; alt=&quot;&quot; src=&quot;http://pic.yupoo.com/aixixili/D1P9G4ko/lTtKq.png&quot; width=&quot;640&quot; height=&quot;1136&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://juhuiwan.cn&quot;&gt;&lt;img class=&quot;alignnone&quot; alt=&quot;&quot; src=&quot;http://pic.yupoo.com/aixixili/D1P8MoC5/OKUEU.png&quot; width=&quot;640&quot; height=&quot;1136&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://juhuiwan.cn&quot;&gt;&lt;img class=&quot;alignnone&quot; alt=&quot;&quot; src=&quot;http://pic.yupoo.com/aixixili/D1P9hytV/c5YZf.png&quot; width=&quot;640&quot; height=&quot;1136&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 22 Jul 2013 00:00:00 +0800</pubDate>
+        <link>http://www.aixixili.com/2013/07/22/%e8%81%9a%e4%bc%9a%e7%8e%a9%e4%b8%8a%e7%ba%bf/</link>
+        <guid isPermaLink="true">http://www.aixixili.com/2013/07/22/%e8%81%9a%e4%bc%9a%e7%8e%a9%e4%b8%8a%e7%ba%bf/</guid>
+        
+        
+        <category>生活</category>
+        
+      </item>
+    
+      <item>
+        <title>3个月</title>
+        <description>&lt;p&gt;4月18号到上海，一晃快三个月了。&lt;/p&gt;
+
+&lt;p&gt;一直在忙，一直没时间整理一些东西，每天除了吃饭睡觉就是工作，累了就躺办公桌旁边的小床上睡，醒了又坐起来继续的感觉还挺不错的。&lt;/p&gt;
+
+&lt;p&gt;上周四刚把应用提交到App Store，等待审核中，可以稍微放空一下。&lt;/p&gt;
+
+&lt;p&gt;想想这三个月经历的一些场景把，有些以前从未能体验到的：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;span style=&quot;line-height: 14px;&quot;&gt;去百脑汇配电脑，和电脑城的奸商斗智斗勇；&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;去宜家选便宜又实用的办公桌（还试图去北蔡宜家旁的美凯龙，发现屌丝了。。）；&lt;img class=&quot;alignnone&quot; alt=&quot;&quot; src=&quot;http://pic.yupoo.com/aixixili/CZzpwvri/3deCu.jpg&quot; width=&quot;720&quot; height=&quot;960&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span style=&quot;font-size: 1rem; line-height: 1.714285714;&quot;&gt;每天吃完饭回来两局桌上足球，上演屌丝逆袭的经典战役；&lt;img class=&quot;alignnone&quot; alt=&quot;&quot; src=&quot;http://pic.yupoo.com/aixixili/CZzpsX4D/GTAQd.jpg&quot; width=&quot;960&quot; height=&quot;720&quot; /&gt;&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;和Roger无时不在讨论公司规划、产品定位、交互细节，技术方案，你争我执，越辩越明；&lt;img class=&quot;alignnone&quot; alt=&quot;&quot; src=&quot;http://pic.yupoo.com/aixixili/CZzpxfDf/11a6Za.jpg&quot; width=&quot;720&quot; height=&quot;960&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;每天广播体操，仰卧起坐，俯卧撑，着实把我的胸整大了；（这个就不上图了，哈哈）&lt;/li&gt;
+  &lt;li&gt;招设计师，不愿意付钱给招聘网站，只能各大高校论坛发帖，吹牛逼，但最后收到简历还不少；&lt;/li&gt;
+  &lt;li&gt;……&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span style=&quot;line-height: 24px;&quot;&gt;技术上，也接触了一些新的东西。现在用Objective-C做iOS客户端开发，服务器用的阿里云，nginx+Apache，用Java做Service，用RoR搭的应用的核心词库管理后台，数据库用的MySQL，还好，Java和RoR以前都有涉足，其他的也不难。&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;line-height: 24px;&quot;&gt;由于设计师的晚到，产品比计划推迟了大概一个月的时间上线，不过好事多磨，现在的团队氛围非常棒，上一张团队成员的图。&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;alignnone&quot; alt=&quot;&quot; src=&quot;http://pic.yupoo.com/aixixili/CZzpyDOA/ECoU0.jpg&quot; width=&quot;960&quot; height=&quot;960&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;line-height: 1.714285714; font-size: 1rem;&quot;&gt;当然，也要推荐一下即将上线的产品，请关注官网&lt;/span&gt;&lt;a style=&quot;line-height: 1.714285714; font-size: 1rem;&quot; href=&quot;http://juhuiwan.cn/&quot;&gt;http://juhuiwan.cn/&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 07 Jul 2013 00:00:00 +0800</pubDate>
+        <link>http://www.aixixili.com/2013/07/07/3-months/</link>
+        <guid isPermaLink="true">http://www.aixixili.com/2013/07/07/3-months/</guid>
+        
+        
+        <category>工作</category>
+        
+      </item>
+    
+      <item>
+        <title>加油吧，骚年们~</title>
+        <description>&lt;p&gt;今天，4月18日，正好是我在4399一周年的日子，也是我离开的日子。&lt;br /&gt;
+这一年，大家一起夜以继日，拼搏奋斗，共同经历了明朝这些年的从无到有，我也被整个团队团结拼搏、务实进取的精神所深深打动，这一年也将是我职业生涯非常重要的一年。&lt;br /&gt;
+由于种种原因，很遗憾无法和大家一起坚持到底，一起分享收获的喜悦，不过我相信通过大家的不懈努力，不多时，明朝这些年定会成功，我也期待收到你们成功的消息。&lt;br /&gt;
+加油吧，骚年们~&lt;/p&gt;
+</description>
+        <pubDate>Thu, 18 Apr 2013 00:00:00 +0800</pubDate>
+        <link>http://www.aixixili.com/2013/04/18/come-on-guys/</link>
+        <guid isPermaLink="true">http://www.aixixili.com/2013/04/18/come-on-guys/</guid>
+        
+        
+        <category>工作</category>
+        
+      </item>
+    
+      <item>
+        <title>梦开始的地方</title>
+        <description>&lt;p&gt;时间有时候总是吻合得恰到好处。&lt;/p&gt;
+
+&lt;p&gt;今天是清明假期最后一天，还记得去年清明假期，已经在百度提了&lt;a href=&quot;http://www.aixixili.com/index.php/2012/04/13/goodbye-baidu/&quot; target=&quot;_blank&quot;&gt;离职申请&lt;/a&gt;，从上海飞到广州，然后陪俩妈去香港玩了几天。一年后，加注的通行证即将过期，上面一片空白，而早已没有时间或者目的再去香港一趟。&lt;/p&gt;
+
+&lt;p&gt;接下来的一周将是我的4399工作的最后一周，我的离开，快的连我自己都有点惊讶。&lt;/p&gt;
+
+&lt;p&gt;回味一下这一年，收获不少，失去的也很多。&lt;/p&gt;
+
+&lt;p&gt;一年前，我带着在移动互联网初潮期混迹的两年经验，&lt;a href=&quot;http://www.aixixili.com/index.php/2012/06/03/recent/&quot; target=&quot;_blank&quot;&gt;进入了一个对我来说完全陌生的游戏行业&lt;/a&gt;。这一年，是手机游戏爆发的一年，但是真正成功的产品并不多。对移动互联网来说，手机游戏是唯一几个有盈利模式的领域，市场之大和增长之快，已经让无数的公司和开发者涌入了手机游戏的研发之中，都想在这块大蛋糕里分一杯羹，和当年团购的泡沫爆发然后洗牌蜕变一样，2013年，将是手机游戏的分水岭，不成功便成仁。事实上，如今的手机游戏市场已经是一片红海，里面牺牲的创业者和小公司不计其数，高素质和有能力策划的缺乏，高额的让人无法承担的推广费用，强大而激烈的竞争等，都成为了阻碍手机游戏小公司和开发者的重要因素。另外，很多手机游戏公司打着手机游戏的幌子，而完全照搬网页游戏的玩法和操作，他们事实上根本就不懂手机游戏玩家和手机体验，飘渺不定，漫无方向，即使有做过成功网页游戏的策划，也很难在一个他完全不懂的终端上做出好的体验。记得某个项目的主导策划，刚开始连iOS和Adnroid都分不清楚，你能指望他能做出什么符合用户体验的好东西吗？&lt;/p&gt;
+
+&lt;p&gt;我对手机游戏的理解是这样的：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;简单。不仅说玩法简单，而且界面和操作都要简单。玩法简单，是指每个系统一定要不拖沓，操作简单，是指交互一定不能复杂。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;更符合手机用户的习惯。从普遍的手机使用频率来看，手机用户的使用时间集中在中午、晚上和睡前，从我们后台统计出来的在线和充值数据可以看出来，手机游戏玩家对应的这个数据也是符合的。所以，所有需要一起在线的活动都应该放在这几个时间段。其他的时间段，就让玩家用他的碎片时间去做他独立的事情，不应有太多的组队活动。可以想象一个在下午6点开始又持续1个小时的活动会有什么样的结果。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;更符合手机用户的体验。手机和网页的表现大不一样，网页上可以用鼠标精准的点击一个很小的图标，而手机上却很难，误操作的情况非常之多，因为手机很多时候是在运动中来完成点击操作。一进入游戏，就在小小的屏幕上看到密密麻麻的图标，一定是让用户抓狂的。更简单的设计，是看不到那么多让人无法琢磨和无法选择的东西的。用户在手机上更多的是看和体验，而一些无谓的点击和操作，是可以由游戏来帮助他完成。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;我没玩过更多的手机游戏，也提不出更有深度的见解。但我认为一个好的手机游戏策划，应该把市面上所有的手机游戏全部玩一遍。我上面的这些理解，都是个人的薄见，毕竟我才入行一年，一年前我连什么是RPG，什么是NPC都不知道，比起那些牛逼轰轰的策划，我这些想法只能算个屁。&lt;/p&gt;
+
+&lt;p&gt;很久以前，有几个人，撑着一架竹筏，去探寻神秘岛上的宝藏。他们目标一致，虽然没有指南针，但是凭借着每个人的能力和团体的合力，他们飞速的向目标前进着。一路上，遇到了很多志同道合的伙伴，他们把船越修越大，承载的人也越来越多，因为他们知道，这样才能更快更稳的到达，到达以后也才能挖到更多的宝物。但是，当行程过半的时候，他们却迷失了方向，船长无能为力，水手们相互抱怨，因为看不到终点，他们再也没有了最早的激情，水手们一个个跳水或者换乘了其他的船。我，也是这些水手中的一员，当我迷茫的时候，一个我多年失散的水手联系上了我，告诉我说，他在遥远的天边，发现了一片云，那里藏着我们以前在一起时的梦想，但是，去那里的路会比现在更艰难，会有跟多的未知。听到这里，我已经毅然决定，一定要去看看最初的梦想。&lt;/p&gt;
+
+&lt;p&gt;这，就是我离开的原因。所以，决定离开并不是我不看好这个行业，能赚钱才是王道，游戏从来都是一个赚钱的领域，我们也都很羡慕年会上拿宝马的同事们，为他们感到兴奋和骄傲。但是，不是每个团队，都能那么幸运。&lt;/p&gt;
+
+&lt;p&gt;所以，我希望藏在那团云里的我的梦想，能带我起飞。&lt;/p&gt;
+
+&lt;p&gt;因为现在的我一无所有，所以我什么都不怕。&lt;/p&gt;
+
+&lt;p&gt;所以，一年后，纵然有各种阻碍，但我又将启程，启程回到上海，回到那个那个梦开始的地方……&lt;/p&gt;
+</description>
+        <pubDate>Wed, 03 Apr 2013 00:00:00 +0800</pubDate>
+        <link>http://www.aixixili.com/2013/04/03/place-where-dream-start/</link>
+        <guid isPermaLink="true">http://www.aixixili.com/2013/04/03/place-where-dream-start/</guid>
+        
+        
+        <category>工作</category>
+        
+        <category>生活</category>
+        
+      </item>
+    
+      <item>
+        <title>MySQL识别符，反勾号的问题</title>
+        <description>&lt;p&gt;数据库、表、索引、列和别名是识别符。&lt;/p&gt;
+
+&lt;p&gt;识别符可以引起来也可以不引起来。如果识别符是一个保留字或包含特殊字符，无论何时使用，必须将它引起来。&lt;/p&gt;
+
+&lt;p&gt;识别符的引用符是反勾号(‘`’)。&lt;/p&gt;
+
+&lt;p&gt;案例：&lt;/p&gt;
+
+&lt;p&gt;当前使用数据库db1，现在要查询数据库db2的表table1时，如果sql语句中的表名用反勾号`db1.table1`，这时数据库会在前面添加当前使用的数据库db1，使其变成`db1.db2.table1`，这时的sql语句显然不对，运行也会报错Table ‘db1.db2.table1′ doesn’t exist。&lt;/p&gt;
+
+&lt;p&gt;解决方法：&lt;br /&gt;
+1. `db1.table1` —-&amp;gt; `db1`.`table1`；MySQL官方文档中有解释：如果多部分名的组件需要引用，应分别将它们引起来而不要将整个名引起来。例如，`my-tables`.`my-column` 有效，而`my-tables.my-column`无效。&lt;br /&gt;
+2. `db1.table1` —-&amp;gt; db1.table1；即当表名不含保留字和特殊字符时，不使用反勾号，这样MySQL不会在前面画蛇添足。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Sep 2012 00:00:00 +0800</pubDate>
+        <link>http://www.aixixili.com/2012/09/07/mysql-identifier-backtick/</link>
+        <guid isPermaLink="true">http://www.aixixili.com/2012/09/07/mysql-identifier-backtick/</guid>
+        
+        
+        <category>mysql</category>
+        
+        <category>工作</category>
+        
+      </item>
+    
+      <item>
+        <title>Erlang本地通过net_adm:ping远程节点一直返回pang解决办法</title>
+        <description>&lt;p&gt;一直有个问题没解决，本地节点直接可以通过net_adm:ping相互连通，但是本地一直都无法通过此方式连接到远程的服务器上的节点。&lt;/p&gt;
+
+&lt;p&gt;yufeng有篇&lt;a href=&quot;http://blog.yufeng.info/archives/2169&quot;&gt;文章&lt;/a&gt;是说这个问题，我读了至少3遍，但都没解决的这个问题。&lt;/p&gt;
+
+&lt;p&gt;今天发现原来是远程服务器防火墙的问题，其实yufeng在上述文章中已经提到可能是此原因，之前没有认真分析，浪费了不少时间。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;首先从原理上分析下!由于erlang节点间通讯是透过tcp来进行的，所以我们确保以下几点：&lt;br /&gt;
+1. 确保网络连接是通的，可以透过ping来查看。&lt;br /&gt;
+2. 确保网络连接上tcp是可以通的，可以透过netcat在二个节点所在的机器上分别开个服务器端和客户端进行验证。&lt;br /&gt;
+3. 确保端口是防火墙友好的。erlang的节点是登记在epmd服务上的，所以4369端口要能访问，其次节点的动态端口是可以访问的。&lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;epmd -names&lt;br /&gt;
+epmd: up and running on port 4369 with data:&lt;br /&gt;
+name xx at port 46627&lt;br /&gt;
+…&lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;同样可以用netcat来验证。&lt;br /&gt;
+4. erlang节点的cookie是一样的，可以透过setcookie来解决。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我的问题就出在3上。&lt;/p&gt;
+
+&lt;p&gt;于是乎：&lt;br /&gt;
+到/etc/sysconfig下修改iptables，增加&lt;br /&gt;
+-A RH-Firewall-1-INPUT -p tcp -m state –state NEW -m tcp –dport 4369 -j ACCEPT&lt;br /&gt;
+-A RH-Firewall-1-INPUT -p tcp -m state –state NEW -m tcp –dport 动态端口号 -j ACCEPT&lt;br /&gt;
+然后&lt;br /&gt;
+service iptables restart&lt;br /&gt;
+然后从本机net_adm:ping，于是看到了可爱的pong，从此可以用observer:start()监控远程服务器的状态了。&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 23 Aug 2012 00:00:00 +0800</pubDate>
+        <link>http://www.aixixili.com/2012/08/23/erlang-net_admin-ping-pang-solution/</link>
+        <guid isPermaLink="true">http://www.aixixili.com/2012/08/23/erlang-net_admin-ping-pang-solution/</guid>
+        
+        
+        <category>erlang</category>
+        
+      </item>
+    
+      <item>
+        <title>illegal guard expression</title>
+        <description>&lt;p&gt;今天遇到一个奇怪的问题：&lt;/p&gt;
+
+&lt;pre class=&quot;erlang&quot;&gt;put(a, 1),
+if
+	get(a) =:= 1 -&amp;gt;
+		ok;
+	true -&amp;gt;
+		bad
+end.
+
+* 2: illegal guard expression&lt;/pre&gt;
+
+&lt;p&gt;查了一下官方关于Guard的文档：&lt;br /&gt;
+The set of valid guard expressions (sometimes called guard tests) is a subset of the set of valid Erlang expressions. The reason for restricting the set of valid expressions is that evaluation of a guard expression must be guaranteed to be free of side effects.&lt;/p&gt;
+
+&lt;p&gt;网上也有人问道：&lt;br /&gt;
+&amp;gt;&lt;br /&gt;
+&amp;gt; On Fri, Dec 2, 2011 at 10:30 AM, Barco You &amp;lt;&amp;gt; wrote:&lt;br /&gt;
+&amp;gt; Why does the following expression got “illegal guard expression” when compiling:&lt;br /&gt;
+&amp;gt; X = 0.5,&lt;br /&gt;
+&amp;gt; if&lt;br /&gt;
+&amp;gt; random:uniform() &amp;lt; X -&amp;gt; %error reported for this line&lt;br /&gt;
+&amp;gt; good;&lt;br /&gt;
+&amp;gt; true -&amp;gt;&lt;br /&gt;
+bad&lt;br /&gt;
+end.&lt;br /&gt;
+&amp;gt;&lt;br /&gt;
+&amp;gt; But if I change it to following expression, it’s ok:&lt;br /&gt;
+&amp;gt; X = 0.5,&lt;br /&gt;
+&amp;gt; Ran = random:uniform(),&lt;br /&gt;
+&amp;gt; if&lt;br /&gt;
+&amp;gt; Ran &amp;lt; X -&amp;gt;&lt;br /&gt;
+&amp;gt; good;&lt;br /&gt;
+&amp;gt; true -&amp;gt;&lt;br /&gt;
+&amp;gt; bad&lt;br /&gt;
+&amp;gt; end.&lt;br /&gt;
+Yes, and not only does this mean that only a limited set of functions are allowed as guard functions, random:uniform() _does_ have side effects, since it updates the seed in the process dictionary.&lt;/p&gt;
+
+&lt;p&gt;可见，erlang:get/1 also has side effect.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Aug 2012 00:00:00 +0800</pubDate>
+        <link>http://www.aixixili.com/2012/08/20/erlang-illegal-guard-expression/</link>
+        <guid isPermaLink="true">http://www.aixixili.com/2012/08/20/erlang-illegal-guard-expression/</guid>
+        
+        
+        <category>erlang</category>
+        
+      </item>
+    
+      <item>
+        <title>不要等到他们都走不动了才来后悔</title>
+        <description>&lt;p&gt;有一次你问我说：&lt;br /&gt;
+“你的梦想是什么？”&lt;br /&gt;
+“我的梦想是环游世界！”&lt;br /&gt;
+和大多数人一样，我的答案没有一点创意。&lt;/p&gt;
+
+&lt;p&gt;每年去一个国家不难，难的是接下来的50年都坚持这个梦想。&lt;/p&gt;
+
+&lt;p&gt;很多人都听过一个段子，讲的大概是在中国买一个厨房的面积就可以环游世界之类的。没有人听到这个不痛恨房价，没有人听到这个不有背着厨房去环游世界的冲动，可是迫于各种压力，存下了一个厨房的钱，又没有办法去做。&lt;/p&gt;
+
+&lt;p&gt;我很幸运的遇到了你，遇到了愿意和我一起背着厨房去环游世界的人。更令人欣慰的是，你更多的是想到了父母。&lt;/p&gt;
+
+&lt;p&gt;我父亲50几岁，至今没有出过川。&lt;br /&gt;
+人一辈子也许就这么平平淡淡，外面的世界再精彩，不窥视也罢，小圈子也能悠哉一生。&lt;br /&gt;
+我之前从来没有想过自己挣钱是用来做什么，好像人一辈子是被安排好的，出生，上学，工作，成家，生子，老去……&lt;br /&gt;
+我以为孝敬父母就是一句话，直到遇到你，我才深感自己的没心没肺。&lt;/p&gt;
+
+&lt;p&gt;今天我们落实了第一个去的地方，那么曲折。从旅行社出来，你手舞足蹈的计划起了我们的下一次，怎么凑齐钱，带上父母6个人一起，马尔代夫，沙滩，海上木房，香格里拉酒店，3套情侣装，全家福照片……看到你发自内心的笑容，我才明白，不遇到你，我可能一辈子都不知道，我挣钱可以这样花，这也才是生活的动力。&lt;/p&gt;
+
+&lt;p&gt;“趁现在父母身体还好，把我们挣来的钱花在让他们多出去玩玩，不要等到他们走不动了才来后悔……”&lt;br /&gt;
+&lt;img src=&quot;http://pic.yupoo.com/aixixili/CcCvefj5/medish.jpg&quot; alt=&quot;马尔代夫&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 19 Aug 2012 00:00:00 +0800</pubDate>
+        <link>http://www.aixixili.com/2012/08/19/%e4%b8%8d%e8%a6%81%e7%ad%89%e5%88%b0%e4%bb%96%e4%bb%ac%e9%83%bd%e8%b5%b0%e4%b8%8d%e5%8a%a8%e4%ba%86%e6%89%8d%e6%9d%a5%e5%90%8e%e6%82%94/</link>
+        <guid isPermaLink="true">http://www.aixixili.com/2012/08/19/%e4%b8%8d%e8%a6%81%e7%ad%89%e5%88%b0%e4%bb%96%e4%bb%ac%e9%83%bd%e8%b5%b0%e4%b8%8d%e5%8a%a8%e4%ba%86%e6%89%8d%e6%9d%a5%e5%90%8e%e6%82%94/</guid>
+        
+        
+        <category>口水</category>
+        
+        <category>生活</category>
+        
+      </item>
+    
+      <item>
+        <title>Erlang Dialyzer在windows下配置和使用方法</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;添加名为OTP_HOME和HOME的系统环境变量，值都为Erlang安装目录，如C:Program Fileserl5.9.1  &lt;/li&gt;
+  &lt;li&gt;生成PLT（耗时约20多分钟）&lt;br /&gt;
+在命令行输入以下命令（或放到.bat文件中）：&lt;br /&gt;
+dialyzer –build_plt -r “%OTP_HOME%/lib/erts-5.9.1/ebin”&lt;br /&gt;
+dialyzer –add_to_plt –plt “%OTP_HOME%/.dialyzer_plt” -c “%OTP_HOME%/lib/kernel-2.15.1/ebin”&lt;br /&gt;
+dialyzer –add_to_plt –plt “%OTP_HOME%/.dialyzer_plt” -c “%OTP_HOME%/lib/stdlib-1.18.1/ebin”&lt;br /&gt;
+dialyzer –add_to_plt –plt “%OTP_HOME%/.dialyzer_plt” -c “%OTP_HOME%/lib/mnesia-4.7/ebin”&lt;br /&gt;
+dialyzer –add_to_plt –plt “%OTP_HOME%/.dialyzer_plt” -c “%OTP_HOME%/lib/crypto-2.1/ebin”&lt;br /&gt;
+dialyzer –add_to_plt –plt “%OTP_HOME%/.dialyzer_plt” -c “%OTP_HOME%/lib/sasl-2.2.1/ebin”  &lt;/li&gt;
+  &lt;li&gt;上述步骤会在Erlang安装目录下生成.dialyzer_plt文件  &lt;/li&gt;
+  &lt;li&gt;cd到项目根目录，在命令行执行dialyzer -r ebin&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 06 Aug 2012 00:00:00 +0800</pubDate>
+        <link>http://www.aixixili.com/2012/08/06/erlang-dialyzer-windows-config-and-useage/</link>
+        <guid isPermaLink="true">http://www.aixixili.com/2012/08/06/erlang-dialyzer-windows-config-and-useage/</guid>
+        
+        
+        <category>erlang</category>
+        
+        <category>工作</category>
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,7 +1,7 @@
 ---
 id: 136
 title: 关于李攀
-author: admin
+author: 李攀
 layout: page
 guid: http://www.aixixili.com/?page_id=136
 duoshuo_thread_id:

@@ -1,7 +1,7 @@
 ---
 id: 134
 title: MySQL识别符，反勾号的问题
-author: admin
+author: 李攀
 layout: post
 guid: http://www.aixixili.com/?p=134
 permalink: /2012/09/07/mysql-identifier-backtick/

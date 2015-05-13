@@ -1,7 +1,7 @@
 ---
 id: 83
 title: Erlang Dialyzer在windows下配置和使用方法
-author: admin
+author: 李攀
 layout: post
 guid: http://www.aixixili.com/?p=83
 permalink: /2012/08/06/erlang-dialyzer-windows-config-and-useage/

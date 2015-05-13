@@ -1,7 +1,7 @@
 ---
 id: 212
 title: 加油吧，骚年们~
-author: admin
+author: 李攀
 layout: post
 guid: http://www.aixixili.com/?p=212
 permalink: /2013/04/18/come-on-guys/

@@ -1,7 +1,7 @@
 ---
 id: 68
 title: 再见，百度。
-author: admin
+author: 李攀
 layout: post
 guid: http://www.aixixili.com/?p=68
 permalink: /2012/04/13/goodbye-baidu/

@@ -1,7 +1,7 @@
 ---
 id: 122
 title: Erlang本地通过net_adm:ping远程节点一直返回pang解决办法
-author: admin
+author: 李攀
 layout: post
 guid: http://www.aixixili.com/2012/08/23/116-autosave/
 permalink: /2012/08/23/erlang-net_admin-ping-pang-solution/

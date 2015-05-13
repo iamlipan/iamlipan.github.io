@@ -1,7 +1,7 @@
 ---
 id: 71
 title: 创建Erlang的Application
-author: admin
+author: 李攀
 layout: post
 guid: http://www.aixixili.com/?p=71
 permalink: /2012/05/23/create-erlang-application/

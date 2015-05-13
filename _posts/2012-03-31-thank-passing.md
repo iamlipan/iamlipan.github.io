@@ -1,7 +1,7 @@
 ---
 id: 38
 title: 感谢过客
-author: admin
+author: 李攀
 layout: post
 guid: http://www.aixixili.com/?p=38
 permalink: /2012/03/31/thank-passing/

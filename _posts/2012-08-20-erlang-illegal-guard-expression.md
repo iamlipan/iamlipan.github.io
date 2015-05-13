@@ -1,7 +1,7 @@
 ---
 id: 92
 title: illegal guard expression
-author: admin
+author: 李攀
 layout: post
 guid: http://www.aixixili.com/2012/08/20/90-autosave/
 permalink: /2012/08/20/erlang-illegal-guard-expression/

@@ -1,7 +1,7 @@
 ---
 id: 152
 title: 梦开始的地方
-author: admin
+author: 李攀
 layout: post
 guid: http://www.aixixili.com/?p=152
 permalink: /2013/04/03/place-where-dream-start/

@@ -1,6 +1,6 @@
 ---
 id: 136
-title: 关于李攀
+title: 
 author: 李攀
 layout: page
 guid: http://www.aixixili.com/?page_id=136

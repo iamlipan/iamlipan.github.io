@@ -34,7 +34,7 @@ guid: http://www.aixixili.com/?page_id=136
 [![知乎](http://pic.yupoo.com/aixixili/ENOBlcHU/square.jpg)](http://www.zhihu.com/people/iamlipan) 
 [![微博](http://pic.yupoo.com/aixixili/ENOBlePP/square.jpg)](http://weibo.com/206053530)
 <img src="http://pic.yupoo.com/aixixili/ENONXfCs/square.jpg" onmouseover="this.src='http://pic.yupoo.com/aixixili/ENOZv73I/square.jpg';" onmouseout="this.src='http://pic.yupoo.com/aixixili/ENONXfCs/square.jpg';" />
-
+......
 
 [1]:http://juhuiwan.cn "聚会玩"
 [2]:http://www.4399.com "4399"

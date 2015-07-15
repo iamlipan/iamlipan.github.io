@@ -4,11 +4,28 @@ title: 关于李攀
 author: 李攀
 layout: page
 guid: http://www.aixixili.com/?page_id=136
-duoshuo_thread_id:
-  - 1401335266181906447
----
-李攀
 
-  * <span style="line-height: 1.714285714; font-size: 1rem;">聚会玩（<a href="http://juhuiwan.cn" target="_blank">http://juhuiwan.cn</a>）创始人<br /> </span>
-  * <span style="line-height: 1.714285714; font-size: 1rem;">前百度手机浏览器安卓客户端</span><span style="line-height: 1.714285714; font-size: 1rem;">研发工程师</span>
-  * <span style="line-height: 1.714285714; font-size: 1rem;">前4399手机游戏服务器端架构师，主程序</span>
+---
+李攀，[聚会玩](http://juhuiwan.cn)创始人，国家二级运动员（无证），程序员（无证），手风琴十级（无证），第四届世界合唱比赛金奖成员（无证）。
+
+职业经历：
+
+- 前[4399](http://www.4399.com) [手游](http://4399sy.com)服务器端架构师，主程序
+- 前[百度](http://www.baidu.com) [手机浏览器](http://mb.baidu.com)安卓客户端研发工程师
+
+教育经历：
+
+- [同济大学](http://www.tongji.edu.cn)计算机科学与技术系工学硕士
+- [华东师范大学](http://www.ecnu.edu.cn)计算机科学与技术系工学学士
+- 国家级示范性高中[绵阳中学](http://www.scmyzx.com.cn/)
+
+
+
+[![聚会玩](http://pic.yupoo.com/aixixili/ENDPC2MJ/square.jpg)](http://juhuiwan.cn)
+[![博客](http://pic.yupoo.com/aixixili/ENOBkWd2/square.jpg)](http://aixixili.com) 
+[![LinkedIn](http://pic.yupoo.com/aixixili/ENOBlGlr/square.jpg)](https://cn.linkedin.com/pub/alan-li/3a/97b/652)
+[![邮箱](http://pic.yupoo.com/aixixili/ENOBl6Jv/square.jpg)](mailto:i@aixixili.com) 
+[![Instagram](http://pic.yupoo.com/aixixili/ENOBlCf1/square.jpg)](https://instagram.com/iamlipan)
+[![知乎](http://pic.yupoo.com/aixixili/ENOBlcHU/square.jpg)](http://www.zhihu.com/people/iamlipan) 
+[![微博](http://pic.yupoo.com/aixixili/ENOBlePP/square.jpg)](http://weibo.com/206053530)
+<img src="http://pic.yupoo.com/aixixili/ENONXfCs/square.jpg" onmouseover="this.src='http://pic.yupoo.com/aixixili/ENOZv73I/square.jpg';" onmouseout="this.src='http://pic.yupoo.com/aixixili/ENONXfCs/square.jpg';" />

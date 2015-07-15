@@ -6,12 +6,18 @@ layout: page
 guid: http://www.aixixili.com/?page_id=136
 
 ---
-李攀，[聚会玩](http://juhuiwan.cn)创始人，国家二级运动员（无证），程序员（无证），手风琴十级（无证），第四届世界合唱比赛金奖成员（无证）。
+李攀
+
+- [聚会玩](http://juhuiwan.cn)创始人（无证）
+- 国家二级运动员（无证）
+- 程序员（无证）
+- 手风琴十级（无证）
+- 第四届世界合唱比赛金奖成员（无证）
 
 职业经历：
 
 - 前[4399](http://www.4399.com) [手游](http://4399sy.com)服务器端架构师，主程序
-- 前[百度](http://www.baidu.com) [手机浏览器](http://mb.baidu.com)安卓客户端研发工程师
+- 前[百度](http://www.baidu.com) [手机浏览器](http://mb.baidu.com)安卓客户端核心研发工程师
 
 教育经历：
 

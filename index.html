@@ -8,7 +8,7 @@ title: 李攀的博客
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -18,7 +18,22 @@ title: 李攀的博客
       </li>
     {% endfor %}
   </ul>
-
+	<nav id="pagination">
+    		{% if paginator.previous_page %}
+      			{% if paginator.previous_page == 1 %}
+      				<a href="/" title="上一页">&laquo; 上一页</a>
+      			{% else %}
+      				<a href="/page{{ paginator.previous_page }}/" title="上一页">&laquo; 上一页</a>
+      			{% endif %}
+    		{% endif %}
+    
+    		{% if paginator.next_page %} 
+    			<a href="/page{{ paginator.next_page }}/" title="下一页">下一页 &raquo;</a>
+    		{% endif %} 
+  	</nav>
+  <p />
+  <p />
+  <p />
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

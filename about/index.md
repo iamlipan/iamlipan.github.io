@@ -1,9 +1,9 @@
 ---
-id: 136
+id: 1
 title:  关于
 author: 李攀
 layout: page
-guid: http://www.aixixili.com/?page_id=136
+order:  1
 
 ---
 ##李攀

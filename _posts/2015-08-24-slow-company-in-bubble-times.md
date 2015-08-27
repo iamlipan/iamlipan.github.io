@@ -1,5 +1,5 @@
 ---  
-title: 泡沫时代，我选择做一家慢公司
+title: 泡沫时代，我们选择做一家慢公司
 author: 李攀  
 layout: post  
 permalink: /2015/08/24/slow-company-in-bubble-times

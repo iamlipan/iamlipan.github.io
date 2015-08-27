@@ -37,7 +37,7 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: 400) {
+    @media screen and (max-width: 500) {
         @content;
     }
 }

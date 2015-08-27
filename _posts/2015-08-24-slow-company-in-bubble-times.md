@@ -170,3 +170,4 @@ permalink: /2015/08/24/slow-company-in-bubble-times
 
 聚会玩现在开始A轮融资，如果喜欢聚会玩产品或团队，请帮忙转发。
 
+![](http://pic.yupoo.com/aixixili/ENEAESWq/medium.jpg)

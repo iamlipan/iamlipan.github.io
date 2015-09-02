@@ -120,6 +120,19 @@
     padding-left: $spacing-unit / 2;
 }
 
+.footer-col-c {
+    float: left;
+    position: relative;
+    left: 50%;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.footer-col-r {
+    float: right;
+    margin-bottom: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+}
+
 .footer-col-1 {
     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
     width:         calc(35% - (#{$spacing-unit} / 2));

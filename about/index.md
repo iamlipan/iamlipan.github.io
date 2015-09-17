@@ -13,6 +13,7 @@ order:  1
 - 程序员（无证）
 - 手风琴十级（无证）
 - 第四届世界合唱比赛金奖成员（无证）
+- 多次上海国际马拉松和广州马拉松参赛选手（有证）
 
 ###职业经历：
 
@@ -27,9 +28,9 @@ order:  1
 
 
 [![聚会玩](http://pic.yupoo.com/aixixili/ENDPC2MJ/square.jpg)](http://juhuiwan.cn)
-[![博客](http://pic.yupoo.com/aixixili/ENOBkWd2/square.jpg)](http://aixixili.com) 
+[![博客](http://pic.yupoo.com/aixixili/ENOBkWd2/square.jpg)](http://lipan.me) 
 [![LinkedIn](http://pic.yupoo.com/aixixili/ENOBlGlr/square.jpg)](https://cn.linkedin.com/pub/alan-li/3a/97b/652)
-[![邮箱](http://pic.yupoo.com/aixixili/ENOBl6Jv/square.jpg)](mailto:i@aixixili.com) 
+[![邮箱](http://pic.yupoo.com/aixixili/ENOBl6Jv/square.jpg)](mailto:i@lipan.me) 
 [![Instagram](http://pic.yupoo.com/aixixili/ENOBlCf1/square.jpg)](https://instagram.com/iamlipan)
 [![知乎](http://pic.yupoo.com/aixixili/ENOBlcHU/square.jpg)](http://www.zhihu.com/people/iamlipan) 
 [![微博](http://pic.yupoo.com/aixixili/ENOBlePP/square.jpg)](http://weibo.com/206053530)

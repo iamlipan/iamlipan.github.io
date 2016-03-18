@@ -12,3 +12,4 @@ paginate: 10
 
 paginate_path: "/page:num"
 
+gems: [jekyll-paginate]

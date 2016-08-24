@@ -12,6 +12,7 @@ paginate: 10
 
 paginate_path: "/page:num"
 
-gems: [jekyll-paginate]
-
-#markdown: kramdown
+kramdown:
+    hard_wrap: false
+gems:
+    - jekyll-paginate

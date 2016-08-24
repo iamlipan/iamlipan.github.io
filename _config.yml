@@ -16,3 +16,5 @@ kramdown:
   hard_wrap: false
 gems:
   - jekyll-paginate
+
+destination:  ./_site

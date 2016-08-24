@@ -2,4 +2,4 @@ source 'https://ruby.taobao.org/'
 gem 'github-pages'
 
 gem "jekyll"
-#gem "jekyll-paginate"
+gem "jekyll-paginate"

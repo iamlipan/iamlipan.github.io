@@ -14,3 +14,5 @@ paginate_path: "/page:num"
 
 # Gems
 gems: [jekyll-paginate]
+
+markdown: kramdown

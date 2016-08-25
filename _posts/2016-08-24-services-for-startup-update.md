@@ -9,7 +9,7 @@ categories:
 --- 
 较早之前写过一篇创业团队适合的第三方服务和资源的文章，最近翻出来看了一下，发现当时写得比较早和粗糙，只列出了我们用到的部分，而且还有不少当时根本没有用到，随着公司和团队的发展，后来这些工具和服务更新和迁移很多，现在回想起来，很多地方都可以补充一下。
 
-    [原文链接](http://lipan.me/2015/05/25/services-for-startup/){:target="_blank"}
+[原文链接](http://lipan.me/2015/05/25/services-for-startup/){:target="_blank"}
 
 ## 办公和协同
 
@@ -146,6 +146,7 @@ categories:
 ## 产品
 
 #### 交互原型 - [axure](http://www.axure.com/) | [墨刀](https://modao.io/)
+
 >好用的两款Mockup工具。
 
 **update：后来产品开始使用[Sketch](https://www.sketchapp.com/)来做原型和布局，从产品到设计再到开发，使用同一个文件，减少沟通成本和UI标注的成本。**
@@ -160,14 +161,19 @@ categories:
 ## 商标版权
 
 #### [知果果](http://www.zhiguoguo.com/)
+
 >免费还不够吗？之前找的传统代理，价格高，服务差。
 
 **update：无**
 
 ## 数据分析平台（新）
+
 #### ASO - [CQASO](http://www.cqaso.com/) | [ASOU](http://www.asou.com/)
+
 >看榜单，优化关键词，对比竞品数据等，产品和运营一定需要天天看这些东西。
 
 ## 移动广告平台（新）
+
 ### [Google Admob](https://www.google.com/admob/) | [豌豆荚](http://developer.wandoujia.com/adnetwork/dev-docs/) | [广点通](http://e.qq.com/dev/)
+
 >Google是以美元结算，在iOS上效果比较好，后两家刚开始都对开发者有补贴，后来好像没了，豌豆荚只有Android平台，广点通Android和iOS都有。

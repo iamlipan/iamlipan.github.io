@@ -168,7 +168,7 @@ categories:
 
 ## 数据分析平台（新）
 
-##### ASO - [CQASO](http://www.cqaso.com/) | [ASOU](http://www.asou.com/)
+#### ASO - [CQASO](http://www.cqaso.com/) | [ASOU](http://www.asou.com/)
 
 >看榜单，优化关键词，对比竞品数据等，产品和运营一定需要天天看这些东西。
 

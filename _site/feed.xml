@@ -5,13 +5,13 @@
     <description>别有妖妍胜桃李,攀来折去亦成蹊。</description>
     <link>http://lipan.me/</link>
     <atom:link href="http://lipan.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 24 Aug 2016 18:11:48 +0800</pubDate>
-    <lastBuildDate>Wed, 24 Aug 2016 18:11:48 +0800</lastBuildDate>
+    <pubDate>Thu, 25 Aug 2016 15:16:25 +0800</pubDate>
+    <lastBuildDate>Thu, 25 Aug 2016 15:16:25 +0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>适合创业团队的第三方服务和资源整理（2016 更新版）</title>
-        <description>&lt;p&gt;早之前写过一篇关于创业团队适合的第三方服务和资源的文章，最近翻出来看了一下，发现当时写得比较早，只列出了我们用到的部分，由于使用过程中的问题，后来更新和迁移很多，现在回想起来，很多地方都可以补充一下，更有说服力。&lt;/p&gt;
+        <description>&lt;p&gt;较早之前写过一篇创业团队适合的第三方服务和资源的文章，最近翻出来看了一下，发现当时写得比较早和粗糙，只列出了我们用到的部分，而且还有不少当时根本没有用到，随着公司和团队的发展，后来这些工具和服务更新和迁移很多，现在回想起来，很多地方都可以补充一下。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://lipan.me/2015/05/25/services-for-startup/&quot; target=&quot;_blank&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
 
@@ -22,51 +22,51 @@
   &lt;p&gt;邮箱这个老掉牙的工具，查找、沉淀、协作、效率等几乎都无法满足移动互联网公司的需求，我们现在仅用它来注册各种其他服务和印在名片上占位。但是，邮箱还是得有。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update: 无&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update: 和一些外部团队的沟通，很多时候除了邮件也别无选择。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;teambitionhttpswwwteambitioncom&quot;&gt;项目协作 - &lt;a href=&quot;https://www.teambition.com/&quot;&gt;Teambition&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
   &lt;p&gt;我们不用邮箱，所有团队协作相关的东西都在这里，包括项目管理、任务(bug)、文档、日程、讨论等，TB能满足我们所有的需求，极大提高了我们的沟通协作效率。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：Teambition一直保持着更新，我也给他们提了不少bug，没有一个团队协作的工具可以完美地满足所有团队，我也没有横向对比过其他工具，当然，Trello、Tower也是选择之一。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：内部协作选择一款适合自己团队的工具可以大大提高生产力和沟通效率。Teambition一直保持着更新，我也给他们提了不少bug，没有一个团队协作的工具可以完美地满足所有团队，我也没有横向对比过其他工具，当然，Trello、Tower据说也很不错。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;google-docshttpsdocsgooglecom&quot;&gt;文档协同 - &lt;a href=&quot;https://docs.google.com/&quot;&gt;Google Docs&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
   &lt;p&gt;当然，前提你得保证公司是无墙，Google Docs对于多人协同编辑和共享文档是最好的，由于门槛比较高，目前还没有第二家公司把这块做好。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update: 貌似现在有一家叫&lt;a href=&quot;https://yiqixie.com/&quot;&gt;一起写&lt;/a&gt;的，收费！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update: 貌似现在有一家叫&lt;a href=&quot;https://yiqixie.com/&quot;&gt;一起写&lt;/a&gt;的，收费！其实协同的需求并不是那么强烈。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;httpwwwlagoucom&quot;&gt;招聘 - &lt;a href=&quot;http://www.lagou.com/&quot;&gt;拉钩&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
   &lt;p&gt;拉钩是我们招聘效率和成功率最高的招聘渠道。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update: 后面又用了猎聘和BOSS直聘&lt;/strong&gt;**&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update: 后面又用了&lt;a href=&quot;https://www.liepin.com/&quot;&gt;猎聘&lt;/a&gt;和&lt;a href=&quot;https://www.bosszhipin.com&quot;&gt;BOSS直聘&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;section-1&quot;&gt;云服务&lt;/h2&gt;
 
-&lt;h4 id=&quot;httpwwwaliyuncom--ucloudhttpwwwucloudcn--awshttpwwwamazonawscn&quot;&gt;云主机 - &lt;a href=&quot;http://www.aliyun.com/&quot;&gt;阿里云&lt;/a&gt; | &lt;a href=&quot;http://www.ucloud.cn/&quot;&gt;UCloud&lt;/a&gt; | &lt;a href=&quot;http://www.amazonaws.cn/&quot;&gt;AWS&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;httpwwwaliyuncom--ucloudhttpwwwucloudcn&quot;&gt;云主机 - &lt;a href=&quot;http://www.aliyun.com/&quot;&gt;阿里云&lt;/a&gt; | &lt;a href=&quot;http://www.ucloud.cn/&quot;&gt;UCloud&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
   &lt;p&gt;国内几个大厂都大同小异，阿里云做得最早，UCloud专注游戏。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：由于我们是险峰的portfolio，有幸成了AWS在国内的早期用户，AWS的技术和服务远甩国内其他家好几条街，阿里云一直在抄袭AWS。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：由于我们是险峰的portfolio，有幸成了&lt;a href=&quot;http://www.amazonaws.cn/&quot;&gt;AWS&lt;/a&gt;在国内的早期用户，AWS的技术和服务远甩国内其他家好几条街，阿里云一直在抄袭AWS，AWS把“弹性计算”诠释到了极致。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;httpwwwqiniucom--httpswwwupyuncom&quot;&gt;云存储 - &lt;a href=&quot;http://www.qiniu.com/&quot;&gt;七牛&lt;/a&gt; | &lt;a href=&quot;https://www.upyun.com/&quot;&gt;又拍云&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
   &lt;p&gt;云存储聚会玩目前用得不多。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：我们游戏上传和下载服务用了UPYUN，还算稳定，速度也还不错。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：我们游戏上传和下载服务用了UPYUN，还算稳定，速度也还不错，价格也是国内最便宜的。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;dns---dnspodhttpswwwdnspodcn&quot;&gt;DNS管理 - &lt;a href=&quot;https://www.dnspod.cn/&quot;&gt;DNSPOD&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
   &lt;p&gt;稳定，用户体验好，操作简单，方便所有域名在一起统一管理。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：DNSPOD也越来越坑了，很多国外域名解析非常忙，而且一直在推付费服务。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：其实DNSPOD也越来越坑了，很多国外域名解析非常慢，而且一直在推付费服务，但是也一直没换。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;sdk&quot;&gt;第三方SDK&lt;/h2&gt;
 
@@ -75,28 +75,28 @@
   &lt;p&gt;各平台都大同小异，集成成本低，SDK不大，初期可以多接几个平台做一下数据对比，后期还是得自己做。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：后来还接了&lt;a href=&quot;https://www.talkingdata.com/&quot;&gt;TalkingData&lt;/a&gt;和&lt;a href=&quot;https://www.fabric.io/&quot;&gt;Fabric&lt;/a&gt;，Fabric最早是做崩溃统计的，他们家把后台做到了极致，SDK集成步骤和后台体验好到爆，而且后来也增加了应用统计，可以看到实时在线数量等，非常不错！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：后来还接了&lt;a href=&quot;https://www.talkingdata.com/&quot;&gt;TalkingData&lt;/a&gt;和&lt;a href=&quot;https://www.fabric.io/&quot;&gt;Fabric&lt;/a&gt;，Fabric最早是做崩溃统计的，后来被twitter收购了，他们家把体验做到了极致，SDK集成步骤和后台体验酷炫到爆，而且后来也增加了应用统计，可以看到实时在线数量等，非常不错！&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;sdk---httpwwwumengcomcomponentsocial--sharesdkhttpwwwmobcom&quot;&gt;社会化分享SDK - &lt;a href=&quot;http://www.umeng.com/component_social/&quot;&gt;友盟&lt;/a&gt; | &lt;a href=&quot;http://www.mob.com/&quot;&gt;ShareSDK&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
   &lt;p&gt;聚会玩只用了友盟。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：还是自己实现吧，不就微博微信QQ三家么？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：还是自己实现吧，不就微博、微信、QQ三家么？&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;httpwwwumengcomcomponentfeedback&quot;&gt;用户反馈 - &lt;a href=&quot;http://www.umeng.com/component_feedback/&quot;&gt;友盟&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
   &lt;p&gt;能通过反馈渠道搜集到非常多的用户反馈，对产品迭代帮助很大。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：友盟卖给阿里后，变化太大了，用户反馈改成了阿里百川，集成SDK需要集成阿里旺旺，呵呵，还是自己实现吧！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：友盟卖给阿里后，变化太大了，用户反馈改成了阿里百川，集成SDK把阿里旺旺都打进去了，呵呵，反馈功能不复杂，还是自己实现吧！&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;httpxgqqcom&quot;&gt;推送 - &lt;a href=&quot;http://xg.qq.com/&quot;&gt;信鸽&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
   &lt;p&gt;推送有很多，没做过比较，一直用信鸽，比较稳定。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：&lt;a href=&quot;https://leancloud.cn/&quot;&gt;LeanCloud&lt;/a&gt;接口自己实现&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：我们后来用了&lt;a href=&quot;https://leancloud.cn/&quot;&gt;LeanCloud&lt;/a&gt;接口自己实现&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;httpsjinshujunet&quot;&gt;问卷调查 - &lt;a href=&quot;https://jinshuju.net/&quot;&gt;金数据&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
@@ -110,21 +110,21 @@
   &lt;p&gt;目前聚会玩还没涉及到支付。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：后来使用了ping++的支付SDK&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：谁是卧底OL项目使用了ping++的支付SDK。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;mobcomhttpmobcom&quot;&gt;短信验证 - &lt;a href=&quot;http://mob.com/&quot;&gt;Mob.com&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
   &lt;p&gt;认证后每天有1w条免费验证额度，还是挺诱人的。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：额度确实诱人，但是必须接客户端的SDK才能享受，如果只使用RESTful接口的话，是要收费的，那就不如用&lt;a href=&quot;https://leancloud.cn/&quot;&gt;LeanCloud&lt;/a&gt;了&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：额度确实诱人，但是必须接客户端的SDK才能享受，如果只使用服务端RESTful接口的话，是要收费的，那就不如用&lt;a href=&quot;https://leancloud.cn/&quot;&gt;LeanCloud&lt;/a&gt;了。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;im---httpwwweasemobcom&quot;&gt;IM服务 - &lt;a href=&quot;http://www.easemob.com/&quot;&gt;环信&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
   &lt;p&gt;暂时没用到。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：&lt;a href=&quot;https://leancloud.cn/&quot;&gt;LeanCloud&lt;/a&gt;接口自己实现&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：可以用&lt;a href=&quot;https://leancloud.cn/&quot;&gt;LeanCloud&lt;/a&gt;接口自己实现。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;section-2&quot;&gt;代码管理&lt;/h2&gt;
 
@@ -133,25 +133,25 @@
   &lt;p&gt;之前代码托管搭在自己的阿里云服务器上，主要是带宽问题，人多了clone代码非常慢，oschina的托管平台解决了这个问题，除了偶尔短暂抽疯以外，其他还好。要求高的话用内网服务器+GitLab自己搭吧。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：还是搭在内网靠谱，速度也快，我们从&lt;a href=&quot;https://about.gitlab.com/&quot;&gt;GitLab&lt;/a&gt;折腾到&lt;a href=&quot;https://gogs.io/&quot;&gt;GOGS&lt;/a&gt;，后者速度飞起来，Go还是远甩Ruby啊。。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：还是搭在内网靠谱，速度也快，我们从&lt;a href=&quot;https://about.gitlab.com/&quot;&gt;GitLab&lt;/a&gt;折腾到&lt;a href=&quot;https://gogs.io/&quot;&gt;GOGS&lt;/a&gt;，GOGS速度简直飞起来，Go还是远甩Ruby啊。。😢&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;code-review---phabricatorhttpphabricatororg&quot;&gt;Code Review工具 - &lt;a href=&quot;http://phabricator.org/&quot;&gt;Phabricator&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
   &lt;p&gt;聚会玩也用，Facebook也在用。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：最后，我们通过&lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt;的hook结合&lt;a href=&quot;https://gogs.io/&quot;&gt;GOGS&lt;/a&gt;的推送来做code review，很实用！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：最后，我们通过&lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt;的hook结合&lt;a href=&quot;https://gogs.io/&quot;&gt;GOGS&lt;/a&gt;的推送来做code review，review每一次提交的diff，很实用！&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;section-3&quot;&gt;持续集成&lt;/h2&gt;
+&lt;h2 id=&quot;section-3&quot;&gt;持续集成（新）&lt;/h2&gt;
 
 &lt;h4 id=&quot;fastlanehttpsfastlanetools&quot;&gt;持续集成一条龙服务 － &lt;a href=&quot;https://fastlane.tools/&quot;&gt;Fastlane&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;之前没介绍过，这个简直就是神器，从编译、打包、到上传、推送，整个一条龙都可以通过命令行来实现，极大解放了生产力，团队中可以拿一个人专门来做这块的工作，可以为整个团队减小非常大的工作量。&lt;/p&gt;
+  &lt;p&gt;之前没介绍过，这个简直就是神器，从编译、打包、到上传、推送，整个一条龙都可以通过命令行来实现，极大解放了生产力，团队中可以拿一个人专门来做这块的工作，可以为整个团队减小非常大的工作量。后面专门写篇文章来介绍这个神器。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h4 id=&quot;jenkinshttpsjenkinsio&quot;&gt;自动编译 - &lt;a href=&quot;https://jenkins.io/&quot;&gt;Jenkins&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;之前也没介绍，所有的编译工作都交給Jenkins去做吧，和Fastlane结合，坐等推送。&lt;/p&gt;
+  &lt;p&gt;之前也没介绍，所有的编译工作都交給Jenkins去做吧，和Fastlane结合使用效果更好。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;section-4&quot;&gt;测试&lt;/h2&gt;
@@ -187,11 +187,12 @@
 &lt;h2 id=&quot;section-5&quot;&gt;产品&lt;/h2&gt;
 
 &lt;h4 id=&quot;axurehttpwwwaxurecom--httpsmodaoio&quot;&gt;交互原型 - &lt;a href=&quot;http://www.axure.com/&quot;&gt;axure&lt;/a&gt; | &lt;a href=&quot;https://modao.io/&quot;&gt;墨刀&lt;/a&gt;&lt;/h4&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;好用的两款Mockup工具。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;update：无&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;update：后来产品开始使用&lt;a href=&quot;https://www.sketchapp.com/&quot;&gt;Sketch&lt;/a&gt;来做原型和布局，从产品到设计再到开发，使用同一个文件，减少沟通成本和UI标注的成本。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;section-6&quot;&gt;备案&lt;/h2&gt;
 
@@ -205,12 +206,28 @@
 &lt;h2 id=&quot;section-7&quot;&gt;商标版权&lt;/h2&gt;
 
 &lt;h4 id=&quot;httpwwwzhiguoguocom&quot;&gt;&lt;a href=&quot;http://www.zhiguoguo.com/&quot;&gt;知果果&lt;/a&gt;&lt;/h4&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;免费还不够吗？之前找的传统代理，价格高，服务差。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;strong&gt;update：无&lt;/strong&gt;&lt;/p&gt;
 
+&lt;h2 id=&quot;section-8&quot;&gt;数据分析平台（新）&lt;/h2&gt;
+
+&lt;h4 id=&quot;aso---cqasohttpwwwcqasocom--asouhttpwwwasoucom&quot;&gt;ASO - &lt;a href=&quot;http://www.cqaso.com/&quot;&gt;CQASO&lt;/a&gt; | &lt;a href=&quot;http://www.asou.com/&quot;&gt;ASOU&lt;/a&gt;&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;看榜单，优化关键词，对比竞品数据等，产品和运营一定需要天天看这些东西。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section-9&quot;&gt;移动广告平台（新）&lt;/h2&gt;
+
+&lt;h4 id=&quot;google-admobhttpswwwgooglecomadmob--httpdeveloperwandoujiacomadnetworkdev-docs--httpeqqcomdev&quot;&gt;&lt;a href=&quot;https://www.google.com/admob/&quot;&gt;Google Admob&lt;/a&gt; | &lt;a href=&quot;http://developer.wandoujia.com/adnetwork/dev-docs/&quot;&gt;豌豆荚&lt;/a&gt; | &lt;a href=&quot;http://e.qq.com/dev/&quot;&gt;广点通&lt;/a&gt;&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Google是以美元结算，在iOS上效果比较好，后两家刚开始都对开发者有补贴，后来好像没了，豌豆荚只有Android平台，广点通Android和iOS都有。&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         <pubDate>Wed, 24 Aug 2016 00:00:00 +0800</pubDate>
         <link>http://lipan.me/2016/08/24/services-for-startup-2016-update/</link>

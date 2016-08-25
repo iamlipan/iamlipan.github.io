@@ -232,11 +232,11 @@ pre {
   float: left;
   position: relative;
   left: 50%;
-  margin-bottom: 15px; }
+  margin-bottom: 0; }
 
 .footer-col-r {
   float: right;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   padding-right: 15px; }
 
 .footer-col-1 {

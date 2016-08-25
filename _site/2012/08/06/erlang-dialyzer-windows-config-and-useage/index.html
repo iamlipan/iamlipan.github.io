@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
   <title>Erlang Dialyzer在windows下配置和使用方法</title>
   <meta name="description" content="  添加名为OTP_HOME和HOME的系统环境变量，值都为Erlang安装目录，如C:Program Fileserl5.9.1  生成PLT（耗时约20多分钟）在命令行输入以下命令（或放到.bat文件中）：dialyzer –build_plt -r “%OTP_HOME%/lib/erts-5.9.1/eb...">
@@ -81,9 +81,6 @@ dialyzer –add_to_plt –plt “%OTP_HOME%/.dialyzer_plt” -c “%OTP_HOME%/li
     <div class="footer-col-wrapper">
       <div class="footer-col-r  footer-col-3">
         <p class="text">别有妖妍胜桃李,攀来折去亦成蹊。<br />Written by Alan with ♡</p>
-      </div>
-      <div class="footer-col-c  footer-col-3">
-        <p class="text">沪ICP备15040476号</p>
       </div>
     </div>
   </div>

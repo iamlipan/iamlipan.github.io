@@ -168,12 +168,12 @@ categories:
 
 ## 数据分析平台（新）
 
-#### ASO - [CQASO](http://www.cqaso.com/) | [ASOU](http://www.asou.com/)
+##### ASO - [CQASO](http://www.cqaso.com/) | [ASOU](http://www.asou.com/)
 
 >看榜单，优化关键词，对比竞品数据等，产品和运营一定需要天天看这些东西。
 
 ## 移动广告平台（新）
 
-### [Google Admob](https://www.google.com/admob/) | [豌豆荚](http://developer.wandoujia.com/adnetwork/dev-docs/) | [广点通](http://e.qq.com/dev/)
+#### [Google Admob](https://www.google.com/admob/) | [豌豆荚](http://developer.wandoujia.com/adnetwork/dev-docs/) | [广点通](http://e.qq.com/dev/)
 
 >Google是以美元结算，在iOS上效果比较好，后两家刚开始都对开发者有补贴，后来好像没了，豌豆荚只有Android平台，广点通Android和iOS都有。

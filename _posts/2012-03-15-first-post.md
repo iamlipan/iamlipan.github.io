@@ -4,7 +4,7 @@ title: 第一篇
 author: 李攀
 layout: post
 guid: http://www.aixixili.com
-permalink: /2012/03/15/%e7%ac%ac%e4%b8%80%e7%af%87/
+permalink: /2012/03/15/first-post/
 duoshuo_thread_id:
   - 1401335266181906433
 categories:

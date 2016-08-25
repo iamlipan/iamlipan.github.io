@@ -5,8 +5,8 @@
     <description>别有妖妍胜桃李,攀来折去亦成蹊。</description>
     <link>http://lipan.me/</link>
     <atom:link href="http://lipan.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 25 Aug 2016 15:16:25 +0800</pubDate>
-    <lastBuildDate>Thu, 25 Aug 2016 15:16:25 +0800</lastBuildDate>
+    <pubDate>Thu, 25 Aug 2016 15:39:53 +0800</pubDate>
+    <lastBuildDate>Thu, 25 Aug 2016 15:39:53 +0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -1088,8 +1088,8 @@
 &lt;p&gt;另外，我们工作时用到了共享网盘，当几十个渠道包一打出来，大家都同时同步到本地时，我们的带宽几乎就全被吃掉了，导致上网速度特别慢。我们通过在内部AP上接外接USB移动硬盘的方式搭建了内网大文件贡献，所有的大文件都不再走外网流量，不占用公司带宽资源，大家的上网速度不会有影响，这个涉及带宽的解决方案了，下次有时间再写。&lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Nov 2014 00:00:00 +0800</pubDate>
-        <link>http://lipan.me/2014/11/27/%e8%81%9a%e4%bc%9a%e7%8e%a9%e5%86%85%e9%83%a8wifi%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88/</link>
-        <guid isPermaLink="true">http://lipan.me/2014/11/27/%e8%81%9a%e4%bc%9a%e7%8e%a9%e5%86%85%e9%83%a8wifi%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88/</guid>
+        <link>http://lipan.me/2014/11/27/juhuiwan-inner-wifi-solution/</link>
+        <guid isPermaLink="true">http://lipan.me/2014/11/27/juhuiwan-inner-wifi-solution/</guid>
         
         
         <category>工作</category>

@@ -4,7 +4,7 @@ title: 不要等到他们都走不动了才来后悔
 author: 李攀
 layout: post
 guid: http://www.aixixili.com/2012/08/19/86-revision-2/
-permalink: /2012/08/19/%e4%b8%8d%e8%a6%81%e7%ad%89%e5%88%b0%e4%bb%96%e4%bb%ac%e9%83%bd%e8%b5%b0%e4%b8%8d%e5%8a%a8%e4%ba%86%e6%89%8d%e6%9d%a5%e5%90%8e%e6%82%94/
+permalink: /2012/08/19/live-without-regret/
 duoshuo_thread_id:
   - 1401335266181906443
 categories:

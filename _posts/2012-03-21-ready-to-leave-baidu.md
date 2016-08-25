@@ -4,7 +4,7 @@ title: 离职序
 author: 李攀
 layout: post
 guid: http://aixixili.sinaapp.com/?p=27
-permalink: /2012/03/21/%e7%a6%bb%e8%81%8c%e5%ba%8f/
+permalink: /2012/03/21/ready-to-leave-baidu/
 duoshuo_thread_id:
   - 1401335266181906435
 categories:

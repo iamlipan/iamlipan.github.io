@@ -4,7 +4,7 @@ title: 聚会玩内部WIFI解决方案
 author: 李攀
 layout: post
 guid: http://www.aixixili.com/?p=246
-permalink: /2014/11/27/%e8%81%9a%e4%bc%9a%e7%8e%a9%e5%86%85%e9%83%a8wifi%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88/
+permalink: /2014/11/27/juhuiwan-inner-wifi-solution/
 categories:
   - 工作
 ---

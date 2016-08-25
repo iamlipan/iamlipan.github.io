@@ -4,7 +4,7 @@ title: 聚会玩上线
 author: 李攀
 layout: post
 guid: http://www.aixixili.com/?p=231
-permalink: /2013/07/22/%e8%81%9a%e4%bc%9a%e7%8e%a9%e4%b8%8a%e7%ba%bf/
+permalink: /2013/07/22/launch-of-juhuiwan/
 categories:
   - 生活
 ---

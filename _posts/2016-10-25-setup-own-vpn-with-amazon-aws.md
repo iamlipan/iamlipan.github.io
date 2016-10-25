@@ -14,18 +14,27 @@ categories:
 私有VPN的好处
 
 **简单：** 即使不懂技术也能轻松地按步骤执行
+
 **快速：** 只需10分钟就能跟着教程搭建起一个私有VPN
+
 **私有：** 只有你自己使用的专属VPN
+
 **安全：** 数据加密，密码保护，以及不会留下访问日志的VPN**按需使用：** 你可以根据自己的需要启动或停止VPN服务器
+
 **全球：** 在全球9个区域建立一个或多个VPN（包括美国、东京、新加坡）
+
 **设备支持：** 支持PPTP和L2TP安全协议，也就是说你可以通过Android、iPhone、iPad、PC、MAC，甚至大多数路由器来使用VPN
+
 **开源：** 你可以在github上查看源代码，提交代码。[https://github.com/webdigi/AWS-VPN-Server-Setup](https://github.com/webdigi/AWS-VPN-Server-Setup)
+
 **免费：** AWS的新客户可以在第一年免费使用。
 
 开始建立你的私有VPN服务器
 1.首先你要有一个免费的亚马逊云服务账号
 访问 [http://aws.amazon.com/free/](http://aws.amazon.com/free/) 完成注册。如果你已有亚马逊账号，请直接登陆。
+
 **注意：完成注册需要一张可以刷美元预售权的信用卡。**
+
 **注意：注册过程中确认联系方式时，需要你语音读出pin码。**
 
 2.选择你的VPN所在区域

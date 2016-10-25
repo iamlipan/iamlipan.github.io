@@ -30,6 +30,7 @@ categories:
 **免费：** AWS的新客户可以在第一年免费使用。
 
 开始建立你的私有VPN服务器
+
 1.首先你要有一个免费的亚马逊云服务账号
 访问 [http://aws.amazon.com/free/](http://aws.amazon.com/free/) 完成注册。如果你已有亚马逊账号，请直接登陆。
 
@@ -58,8 +59,16 @@ categories:
 这里相当于用json文件描述了一个EC2主机的配置，可以直接下载看看文件的内容。
 
 6.指定服务器的详细信息
-**堆栈名称:** 也就是VPN的名称**speed：** 选择Standard.VPN-Free
-已经足够大多数人使用了。当然如果你要看视频的话也有高速服务可供选择。**Username：** 用于登陆VPN的用户名**VPNPassword：** 用于登陆VPN的密码**VPNPhrase：** 用于L2TP安全连接
+
+**堆栈名称:** 也就是VPN的名称
+
+**speed：** 选择Standard.VPN-Free已经足够大多数人使用了。当然如果你要看视频的话也有高速服务可供选择。
+
+**Username：** 用于登陆VPN的用户名
+
+**VPNPassword：** 用于登陆VPN的密码
+
+**VPNPhrase：** 用于L2TP安全连接
 ![](http://blog-10057309.cos.myqcloud.com/0005.png)
 
 7.不需要添加标签，直接下一步
@@ -76,15 +85,20 @@ categories:
 ![](http://blog-10057309.cos.myqcloud.com/0010.png)
 
 **连接你的私有vpn**
+
 到这里我们的服务器端设置就完成了。下面我们以windows为例展示如何连接到vpn
 
 1.进入“设置-网络和INTERNET-VPN”，选择添加VPN链接
 ![](http://blog-10057309.cos.myqcloud.com/0011.png)
 
 2.填写VPN信息
+
 **连接名称**可以随便写。
+
 **服务器名称**要写刚才第9步里获取到的ip地址。
+
 **VPN**类型是PPTP。
+
 **登陆信息的类型**选择用户名和密码
 
 下面的用户名和密码是可选的，如果不填的话，就要在每次登陆时重新填写。

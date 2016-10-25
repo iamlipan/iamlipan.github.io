@@ -1,14 +1,5 @@
 ---
 id: 224
-title: fastlane - iOS持续部署神器
-author: 李攀
-layout: post
-permalink: /2016/08/25/fastlane-ios-continuous-deployment-tool/
-categories:
-  - 开发
----
----
-id: 224
 title: 用AWS几分钟搭建自己的VPN服务
 author: 李攀
 layout: post

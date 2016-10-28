@@ -8,17 +8,17 @@ order:  1
 ---
 ## 李攀
 
-- [聚会玩][1]创始人（无证）
+- [聚会玩][1]创始人兼CTO（无证）
 - 国家二级运动员（无证）
 - 程序员（无证）
 - 手风琴十级（无证）
-- 第四届世界合唱比赛金奖成员（无证）
+- 第四届世界合唱比赛金奖成员（有证）
 - 多次上海国际马拉松和广州马拉松参赛选手（有证）
 
 ### 职业经历：
 
 - 前[4399][2] [手游][3]服务器端架构师，主程序
-- 前[百度][4] [手机浏览器][5]安卓客户端核心研发工程师
+- 前[百度][4] [手机浏览器][5]Android客户端核心研发工程师
 
 ### 教育经历：
 
@@ -29,7 +29,7 @@ order:  1
 
 [![聚会玩](http://pic.yupoo.com/aixixili/ENDPC2MJ/square.jpg)](http://juhuiwan.cn)
 [![博客](http://pic.yupoo.com/aixixili/ENOBkWd2/square.jpg)](http://lipan.me) 
-[![LinkedIn](http://pic.yupoo.com/aixixili/ENOBlGlr/square.jpg)](https://cn.linkedin.com/pub/alan-li/3a/97b/652)
+[![LinkedIn](http://pic.yupoo.com/aixixili/ENOBlGlr/square.jpg)](https://www.linkedin.com/in/alan-li-65297b3a)
 [![邮箱](http://pic.yupoo.com/aixixili/ENOBl6Jv/square.jpg)](mailto:i@lipan.me) 
 [![Instagram](http://pic.yupoo.com/aixixili/ENOBlCf1/square.jpg)](https://instagram.com/iamlipan)
 [![知乎](http://pic.yupoo.com/aixixili/ENOBlcHU/square.jpg)](http://www.zhihu.com/people/iamlipan) 

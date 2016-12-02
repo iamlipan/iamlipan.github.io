@@ -3,9 +3,6 @@ id: 224
 title: 卷土重来，我的第二次创业已经开始
 author: 李攀
 layout: post
-permalink: 
-categories:
-  - 创业
 ---
 
 三年七个月后，我最终结束了聚会玩这段漫长的创业旅程。一句话总结，没有尽早商业化，遭遇资本寒冬。其实，现在聚会玩拥有的1600万用户通过广告收入和游戏联运是赚钱的，但是我们已经看到了后面我会说到的天花板。还是老一辈的教诲好啊，Too young, too simple, sometimes naive.

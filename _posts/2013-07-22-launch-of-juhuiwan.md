@@ -1,12 +1,7 @@
 ---
-id: 231
 title: 聚会玩上线
 author: 李攀
 layout: post
-guid: http://www.aixixili.com/?p=231
-permalink: /2013/07/22/launch-of-juhuiwan/
-categories:
-  - 生活
 ---
 好事多磨，经过三个月的磕磕碰碰，<a title="聚会玩" href="http://juhuiwan.cn" target="_blank">聚会玩</a>昨天终于通过苹果App Store审核，正式上线了！
 

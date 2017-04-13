@@ -1,14 +1,7 @@
 ---
-id: 71
 title: 创建Erlang的Application
 author: 李攀
 layout: post
-guid: http://www.aixixili.com/?p=71
-permalink: /2012/05/23/create-erlang-application/
-duoshuo_thread_id:
-  - 1401335266181906440
-categories:
-  - Erlang
 ---
 我们写完一组功能模块后（在erlang中，以module为单位），总是希望这一组模块，可以打包成一个应用，作为一个单独的整个，可以启动，停止，象mnesia一样。并可以在其它应用中引用。如何来做到这一点呢。每一个应用都是通过application:start系列函数来启动，application:stop可以停止一个应用。
 

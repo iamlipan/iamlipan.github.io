@@ -1,11 +1,7 @@
 --- 
-id: 224 
 title: 如何打造零离职率公司（一）
 author: 李攀 
 layout: post 
-permalink: /2015/05/25/how-to-build-a-0-dismission-rate-company/ 
-categories: 
-  - 创业 
 --- 
 关于离职率有这么一个说法：一般一个企业年员工离职率低于2%或者高于10%即存在问题。年员工离职率低于2%说明该企业有可能是处于垄断地位的国有企业，人力资源竞争力不强。
 

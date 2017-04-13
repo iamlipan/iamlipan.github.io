@@ -1,2 +1,0 @@
-# iamlipan.github.io
-

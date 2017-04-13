@@ -1,15 +1,7 @@
 ---
-id: 83
 title: Erlang Dialyzer在windows下配置和使用方法
 author: 李攀
 layout: post
-guid: http://www.aixixili.com/?p=83
-permalink: /2012/08/06/erlang-dialyzer-windows-config-and-useage/
-duoshuo_thread_id:
-  - 1401335266181906442
-categories:
-  - Erlang
-  - 工作
 ---
 1. 添加名为OTP_HOME和HOME的系统环境变量，值都为Erlang安装目录，如C:Program Fileserl5.9.1  
 2. 生成PLT（耗时约20多分钟）  

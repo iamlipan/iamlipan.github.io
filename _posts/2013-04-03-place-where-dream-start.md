@@ -1,15 +1,7 @@
 ---
-id: 152
 title: 梦开始的地方
 author: 李攀
 layout: post
-guid: http://www.aixixili.com/?p=152
-permalink: /2013/04/03/place-where-dream-start/
-duoshuo_thread_id:
-  - 1401335266181906448
-categories:
-  - 工作
-  - 生活
 ---
 时间有时候总是吻合得恰到好处。
 

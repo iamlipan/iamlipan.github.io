@@ -1,15 +1,7 @@
 ---
-id: 13
 title: 启程
 author: 李攀
 layout: post
-guid: http://aixixili.sinaapp.com/?p=13
-permalink: /2012/03/18/start-sailing/
-duoshuo_thread_id:
-  - 1401335266181906434
-categories:
-  - 口水
-  - 生活
 ---
 2012年3月18日 T99次列车 上海-广州
 

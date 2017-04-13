@@ -1,14 +1,7 @@
 ---
-id: 27
 title: 离职序
 author: 李攀
 layout: post
-guid: http://aixixili.sinaapp.com/?p=27
-permalink: /2012/03/21/ready-to-leave-baidu/
-duoshuo_thread_id:
-  - 1401335266181906435
-categories:
-  - 工作
 ---
 这几天的经历了，仿佛过了几个月，却说不上为什么。
 

@@ -1,15 +1,7 @@
 ---
-id: 68
 title: 再见，百度。
 author: 李攀
 layout: post
-guid: http://www.aixixili.com/?p=68
-permalink: /2012/04/13/goodbye-baidu/
-duoshuo_thread_id:
-  - 1401335266181906439
-categories:
-  - 口水
-  - 工作
 ---
 本来计划的last day是周五，由于HR周五请假，所有手续不得不提前到周四办理。虽仅一天的提前量，但着实没有丝毫心里准备，有点让我措手不及。
 

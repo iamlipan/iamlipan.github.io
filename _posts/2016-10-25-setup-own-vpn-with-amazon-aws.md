@@ -1,11 +1,7 @@
 ---
-id: 224
 title: 用AWS几分钟搭建自己的VPN服务
 author: 李攀
 layout: post
-permalink: /2016/08/25/setup-own-vpn-with-amazon-aws/
-categories:
-  - 开发
 ---
 
 使用VPN的好处很多，比如隐私，匿名，访问被封锁的网站，更安全，以及克服地理上的限制等。然而你总是很难信任你的VPN提供商，因为他们可能会记录或劫持你的流量。所以私有VPN服务器会给你安全感。通过按照这篇教程的步骤，你将在10分钟内搭建起自己的VPN服务器。

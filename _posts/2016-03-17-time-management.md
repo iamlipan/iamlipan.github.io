@@ -2,7 +2,6 @@
 title: 时间管理
 author: 李攀  
 layout: post  
-permalink: /2016/03/17/time-management
 ---  
 
 ## 先举一个非常简单的例子

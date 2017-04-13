@@ -1,15 +1,7 @@
 ---
-id: 134
 title: MySQL识别符，反勾号的问题
 author: 李攀
 layout: post
-guid: http://www.aixixili.com/?p=134
-permalink: /2012/09/07/mysql-identifier-backtick/
-duoshuo_thread_id:
-  - 1401335266181906446
-categories:
-  - MySQL
-  - 工作
 ---
 数据库、表、索引、列和别名是识别符。
 

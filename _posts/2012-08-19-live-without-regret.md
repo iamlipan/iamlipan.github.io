@@ -1,15 +1,7 @@
 ---
-id: 89
 title: 不要等到他们都走不动了才来后悔
 author: 李攀
 layout: post
-guid: http://www.aixixili.com/2012/08/19/86-revision-2/
-permalink: /2012/08/19/live-without-regret/
-duoshuo_thread_id:
-  - 1401335266181906443
-categories:
-  - 口水
-  - 生活
 ---
 有一次你问我说：  
 “你的梦想是什么？”  

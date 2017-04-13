@@ -1,14 +1,7 @@
 ---
-id: 122
 title: Erlang本地通过net_adm:ping远程节点一直返回pang解决办法
 author: 李攀
 layout: post
-guid: http://www.aixixili.com/2012/08/23/116-autosave/
-permalink: /2012/08/23/erlang-net_admin-ping-pang-solution/
-duoshuo_thread_id:
-  - 1401335266181906445
-categories:
-  - Erlang
 ---
 一直有个问题没解决，本地节点直接可以通过net_adm:ping相互连通，但是本地一直都无法通过此方式连接到远程的服务器上的节点。
 

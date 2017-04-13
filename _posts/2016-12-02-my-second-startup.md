@@ -1,5 +1,4 @@
 ---
-id: 224
 title: 卷土重来，我的第二次创业已经开始
 author: 李攀
 layout: post

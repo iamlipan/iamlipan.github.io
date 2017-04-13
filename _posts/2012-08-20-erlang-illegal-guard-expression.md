@@ -1,14 +1,7 @@
 ---
-id: 92
 title: illegal guard expression
 author: 李攀
 layout: post
-guid: http://www.aixixili.com/2012/08/20/90-autosave/
-permalink: /2012/08/20/erlang-illegal-guard-expression/
-duoshuo_thread_id:
-  - 1401335266181906444
-categories:
-  - Erlang
 ---
 今天遇到一个奇怪的问题：
 

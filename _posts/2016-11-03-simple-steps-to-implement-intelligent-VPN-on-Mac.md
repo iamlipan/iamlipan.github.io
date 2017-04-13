@@ -1,11 +1,7 @@
 ---
-id: 224
 title: 简单几步在Mac上实现智能VPN
 author: 李攀
 layout: post
-permalink: 
-categories:
-  - 开发
 ---
 VPN 是好用，挂上之后国外的网站是能访问了，但原来国内正常访问的网站立刻变得慢吞吞了，怎么破？这是个问题。如果连了 VPN 没做任何设置的话，会导致所有网络都是通过 VPN 访问，缺点有二：
 

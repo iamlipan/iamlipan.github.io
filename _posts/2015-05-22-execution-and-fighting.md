@@ -1,11 +1,7 @@
 ---
-id: 244
 title: 执行力和战斗力
 author: 李攀
 layout: post
-permalink: /2015/05/22/execution-and-fighting/
-categories:
-  - 管理
 ---
 一天早上突然看到表哥在朋友圈发了一张图片：
 ![image](http://pic.yupoo.com/aixixili/EFaI0uoH/medish.jpg)

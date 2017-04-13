@@ -1,12 +1,7 @@
 ---
-id: 246
 title: 聚会玩内部WIFI解决方案
 author: 李攀
 layout: post
-guid: http://www.aixixili.com/?p=246
-permalink: /2014/11/27/juhuiwan-inner-wifi-solution/
-categories:
-  - 工作
 ---
 很早之前就早网上看到过豌豆荚创业初期遇到的公司内部网络问题（http://www.36kr.com/p/207783.html），没想到聚会玩也没法避免。结合我们的实际情况，说一下我们的问题和解决方案。
 

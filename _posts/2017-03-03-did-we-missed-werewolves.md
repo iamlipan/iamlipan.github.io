@@ -1,5 +1,4 @@
 ---
-id: 225
 title: 聚会玩错过了狼人杀吗？
 author: 李攀
 layout: post

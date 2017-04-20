@@ -1,9 +1,11 @@
+cd /home/ubuntu/iamlipan.github.io
+
 echo 'updating code...'
 git pull
 
 
-echo '\njekyll building...'
+echo 'jekyll building...'
 jekyll build
 
-echo '\n🍻 Done! Go and see it~'
+echo '🍻 Done! Go and see it~'
 

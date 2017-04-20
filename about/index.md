@@ -44,4 +44,4 @@ order:  1
 [5]:http://mb.baidu.com "百度手机浏览器"
 [6]:http://www.tongji.edu.cn "同济大学"
 [7]:http://www.ecnu.edu.cn "华东师范大学"
-[8]:http://www.scmyzx.com.cn "绵阳中学"
+[8]:http://www.scmyzx.com.cn "四川绵阳中学"

@@ -33,6 +33,7 @@ order:  1
 <a href="https://www.linkedin.com/in/alan-li-65297b3a" target="_blank"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
 <a href="https://instagram.com/iamlipan" target="_blank"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
 <a href="https://www.facebook.com/li.pan.7965" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
+<a href="https://plus.google.com/104974253379401017230" target="_blank"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a>
 <a href="mailto:i@lipan.me"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></a>
 
 [1]:http://juhuiwan.cn "聚会玩"

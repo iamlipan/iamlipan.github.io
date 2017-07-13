@@ -27,15 +27,13 @@ order:  1
 - 国家级示范性高中[绵阳中学][8]
 
 
-[![聚会玩](https://pic.yupoo.com/aixixili/ENDPC2MJ/square.jpg)](http://juhuiwan.cn)
-[![博客](https://pic.yupoo.com/aixixili/ENOBkWd2/square.jpg)](https://lipan.me) 
-[![LinkedIn](https://pic.yupoo.com/aixixili/ENOBlGlr/square.jpg)](https://www.linkedin.com/in/alan-li-65297b3a)
-[![邮箱](https://pic.yupoo.com/aixixili/ENOBl6Jv/square.jpg)](mailto:i@lipan.me) 
-[![Instagram](https://pic.yupoo.com/aixixili/ENOBlCf1/square.jpg)](https://instagram.com/iamlipan)
-[![知乎](https://pic.yupoo.com/aixixili/ENOBlcHU/square.jpg)](https://www.zhihu.com/people/iamlipan) 
-[![微博](https://pic.yupoo.com/aixixili/ENOBlePP/square.jpg)](https://weibo.com/206053530)
-<img src="https://pic.yupoo.com/aixixili/ENONXfCs/square.jpg" onmouseover="this.src='https://pic.yupoo.com/aixixili/ENOZv73I/square.jpg';" onmouseout="this.src='https://pic.yupoo.com/aixixili/ENONXfCs/square.jpg';" />
-......
+<a href="https://twitter.com/iamlipan" target="_blank"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+<a href="https://weibo.com/206053530" target="_blank"><i class="fa fa-weibo fa-4x" aria-hidden="true"></i></a>
+<a href="../QR.jpg" target="_blank"><i class="fa fa-weixin fa-4x" aria-hidden="true"></i></a>
+<a href="https://www.linkedin.com/in/alan-li-65297b3a" target="_blank"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
+<a href="https://instagram.com/iamlipan" target="_blank"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
+<a href="https://www.facebook.com/li.pan.7965" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
+<a href="mailto:i@lipan.me"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></a>
 
 [1]:http://juhuiwan.cn "聚会玩"
 [2]:http://www.4399.com "4399"

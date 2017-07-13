@@ -71,3 +71,12 @@ layout: post
 - 昨天最好的表现，是今天最低的要求。
 - 不管是技术还是管理，前方是无人区，有待我们探索。
 - 一个人走得快，一群人走得远。
+
+最后，放几张现场的图片：
+
+![](http://pic.yupoo.com/aixixili/GAIQG5tq/medium.jpg)
+![](http://pic.yupoo.com/aixixili/GAIQFUhl/medium.jpg)
+![](http://pic.yupoo.com/aixixili/GAIQG9X4/medium.jpg)
+![](http://pic.yupoo.com/aixixili/GAIQGSWV/medium.jpg)
+
+明年再去。

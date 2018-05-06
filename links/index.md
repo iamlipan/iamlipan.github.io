@@ -13,4 +13,6 @@ order:  2
 
 [阿拉伯的鞋匠](http://feiio.com/)
 
-[Edison Hsu Blog](http://edison-hsu.com/)
+[Edison Hsu Blog](http://edisonhsu.com/)
+
+[alphagao](http://alphagao.com/)

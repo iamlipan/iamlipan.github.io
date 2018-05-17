@@ -8,8 +8,10 @@ layout: post
 
 ### [Lottie](http://airbnb.io/lottie/)
 
-真可谓大幅降低开发工作量的库，以前客户端用程序来实现动画是一件既耗时又很难达到设计师效果的使，加上项目开发周期一般都会比较紧，动画相关的功能优先级会放低，优先级放低，很多时候也就意味着被砍掉了，原本提升用户体验的效果，结果被无奈的大打折扣。
+真可谓大幅降低开发工作量的库，以前客户端用程序来实现动画是一件既耗时又很难达到设计师效果的事，加上项目开发周期一般都会比较紧，动画相关的功能优先级会放低，优先级放低，很多时候也就意味着被砍掉了，原本提升用户体验的效果，结果被无奈的大打折扣。
+
 Airbnb 开源的这个库解决了开发的问题，只要设计师通过 AE，尽情实现想要的效果，然后通过 bodymovin 插件导出 json，开发只需要用 Lottie 即可完成动画效果。
+
 而且，Lottie 同时提供了 [iOS](https://github.com/airbnb/lottie-ios)、[Android](https://github.com/airbnb/lottie-android) 和 [Web](https://github.com/airbnb/lottie-web) 三端的库，这样也可以保证同一个效果在各端显示的一致性，Android 小哥再也不用愁和 iOS 小哥实现出来的效果不一样了，同时也保证了多个产品线风格的统一。
 ![Lottie](http://airbnb.io/lottie/images/Introduction_01_sm.gif)
 
@@ -21,7 +23,7 @@ Airbnb 开源的这个库解决了开发的问题，只要设计师通过 AE，�
 ### [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) | [Charts](https://github.com/danielgindi/Charts)
 
 基本上常用的图表都有了，还带缩放、拖拽、动画等，满足绝大多数场景。
-![Charts](https://github.com/PhilJay/MPAndroidChart/blob/master/screenshots/barchart2d.png)
+![Charts](https://raw.githubusercontent.com/PhilJay/MPAndroidChart/master/screenshots/barchart2d.png)
 
 ### [Hero](https://github.com/lkzhao/Hero)
 

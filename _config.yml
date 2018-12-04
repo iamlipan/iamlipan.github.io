@@ -6,7 +6,7 @@ sign: Written by Alan with ❤️
 beian: 沪ICP备15040476号 
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
-url: http://lipan.me
+url: https://lipan.me
 
 paginate: 10
 

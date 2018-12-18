@@ -147,3 +147,5 @@ PO 在 RC 环境对产品验收完成
 - fir/testflight，客户端有新包第一时间收到通知
 - sentry，生产环境服务端出现错误时第一时间通知
 - zeplin，UI 设计稿有更新第一时间通知并能直接预览设计稿，提高前端和设计师沟通效率
+- standup alice，组织异步站立会的神器，上面 Daily scrum 中提到过
+- sms，非生产环境短信发送到 slack #sms，提高速度同时节约成本

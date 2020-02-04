@@ -31,7 +31,7 @@ order:  1
 
 <a href="https://twitter.com/iamlipan" target="_blank"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
 <a href="https://weibo.com/206053530" target="_blank"><i class="fa fa-weibo fa-4x" aria-hidden="true"></i></a>
-<a href="../QR.jpg" target="_blank"><i class="fa fa-weixin fa-4x" aria-hidden="true"></i></a>
+<a href="../img/QR.jpg" target="_blank"><i class="fa fa-weixin fa-4x" aria-hidden="true"></i></a>
 <a href="https://www.linkedin.com/in/alan-li-65297b3a" target="_blank"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
 <a href="https://instagram.com/iamlipan" target="_blank"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
 <a href="https://www.facebook.com/li.pan.7965" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>

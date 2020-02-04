@@ -14,12 +14,11 @@ layout: post
 ## 我们使用到的一些工具
 
 - JIRA - 和 scrum 的理念完美结合，scrum 里面所有的概念和工件，JIRA 都有非常棒的对应和支持
-- Slack - 团队沟通利器，产品研发整个团队都使用 Slack 进行沟通，充分利用 Slack 沉浸式，基于频道的分组方式，让团队沟通更聚焦，同时减少无效消息打扰，消息搜索和查找更方便
+- WIKI - 实际上是 Confluence, 和 JIRA 一样，都是 Atlassian 公司出品，文档神器，和 JIRA 可以完美打通
+- Slack - 团队沟通利器，产品研发整个团队都使用 Slack 进行沟通，充分利用 Slack 沉浸式，基于频道的分组方式，让团队沟通更聚焦，同时减少无效消息打扰，消息搜索和查找更方便(由于国内网络原因和公司协作，现换成了 DingTalk)
 - Gitlab - 代码托管
-- processon.com - 流程文档
-- Axure - 产品 PRD 文档，搭建了基于 Web 的访问服务
-- cucumber.io - BDD 自动化测试框架
-
+- processon.com - 流程文档，在 WIKI 里面我们也集成了 Draw.io 来作图
+- lanhuapp - 替代 zeplin 的国内产品，可以很好地托管 Axure 和 UI 设计稿
 
 
 
@@ -42,7 +41,7 @@ Dev Team（DT）
 ### Sprint Planning
 ```
 前提:
-产品完整需求确定，功能优先级排定，并已生成 PRD 文档，UI 设计稿确定
+产品召集团队开过 PBR，产品 Backlog 按优先级排好序，本次迭代需求确定，功能优先级排定，并已生成 PRD 文档，UI 设计稿确定
 ```
 - PO 至少提前一天创建日程，并在日程里附上产品 PRD 文档链接，DT 提前阅读并理解接下来版本要达到的目标。
 - 会上 PO 对照 PRD 和 UI 设计稿讲解 Sprint 的目标以及达成该目标所需完成的产品 Backlog，UI 设计师对本次 UI 稿规范做说明。

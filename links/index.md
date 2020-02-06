@@ -7,6 +7,8 @@ order:  2
 
 ---
 
+[一起长大](https://kid17.com)
+
 [聚会玩](http://juhuiwan.cn)
 
 [Zerob13's Page](http://zerob13.in)

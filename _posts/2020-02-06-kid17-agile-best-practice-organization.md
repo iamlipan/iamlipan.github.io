@@ -1,5 +1,5 @@
 ---
-title: 一起长大研发团队敏捷实践 - 组织架构篇
+title: 一起长大敏捷实践 - 组织架构篇
 author: 李攀
 layout: post
 ---

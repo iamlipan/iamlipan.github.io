@@ -98,9 +98,8 @@ layout: post
 
 结构决定功能，组织架构变化是走好敏捷转型的第一步。
 
-
-```
-参考资料：
-- Spotify敏捷模式详解三部曲第一篇：研发团队 https://mp.weixin.qq.com/s/Srd6esYCy_babI_4Q3RrBQ
-- 硝烟中的Scrum和XP https://www.infoq.cn/article/scrum-xp-from-the-trenches/
-```
+> 参考资料：
+> 
+> Spotify敏捷模式详解三部曲第一篇：研发团队 https://mp.weixin.qq.com/s/Srd6esYCy_babI_4Q3RrBQ
+> 
+> 硝烟中的Scrum和XP https://www.infoq.cn/article/scrum-xp-from-the-trenches/

@@ -13,8 +13,8 @@ order:  2
 
 [Zerob13's Page](http://zerob13.in)
 
-[阿拉伯的鞋匠](http://feiio.com/)
+[阿拉伯的鞋匠](https://feikl.com)
 
-[Edison Hsu Blog](http://edisonhsu.com/)
+[Edison Hsu Blog](http://edisonhsu.com)
 
-[alphagao](http://alphagao.com/)
+[alphagao](http://alphagao.com)

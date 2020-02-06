@@ -26,7 +26,7 @@ layout: post
 
 说新的组织架构前，简单讲一下我们之前的组织架构，我们之前采用了一种矩阵型的组织架构，如下图：
 
-![matrix-arch](https://raw.githubusercontent.com/iamlipan/iamlipan.github.io/master/img/2020-02-05-matrix-arch.png)
+![matrix-arch](https://lipan.me/img/2020-02-05-matrix-arch.png)
 
 矩阵式组织架构是这样运作的
 

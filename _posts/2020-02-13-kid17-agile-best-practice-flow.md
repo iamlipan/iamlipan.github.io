@@ -35,6 +35,10 @@ RC 环境走完以后，我们开启 Review 会议，当然，这个会议时间
 
 每次 Sprint Review 结束时，业务部门参与者都会给团队的产出以掌声，这个仪式感对团队来说是超棒的。
 
+下面是一个典型的 Sprint Review 场景
+
+![sprint review](https://lipan.me/img/2020-02-13-sprint-review.JPG)
+
 ## Sprint Retro 
 回顾会议一般在正式上线生产后进行，回顾会议是我认为最重要的会议，自组织团队的自我认知、更新、迭代、流程优化等，全在这里。
 我们的回顾会议有几个特点：
@@ -51,6 +55,10 @@ RC 环境走完以后，我们开启 Review 会议，当然，这个会议时间
 5.  评选 Sprint 之星和看是否能获得团队之星（这两个在后续激励篇会专门介绍）
 
 每个 Sprint 结束后，团队一般会组织一次聚餐，然后进入下一个 Sprint 迭代。
+
+下面是一个典型的 Sprint Retro 场景
+
+![sprint review](https://lipan.me/img/2020-02-13-sprint-retro.JPG)
 
 > 参考资料
 > Scrum要素 https://book.douban.com/subject/20507350/ 	

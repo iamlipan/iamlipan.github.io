@@ -61,4 +61,5 @@ RC 环境走完以后，我们开启 Review 会议，当然，这个会议时间
 ![sprint review](https://lipan.me/img/2020-02-13-sprint-retro.JPG)
 
 > 参考资料
+> 
 > Scrum要素 https://book.douban.com/subject/20507350/ 	

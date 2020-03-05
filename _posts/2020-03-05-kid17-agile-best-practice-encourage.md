@@ -26,10 +26,15 @@ layout: post
 	5. Sprint Retrospective
 
 【002】PO 在 Sprint Planning 给出 Sprint 需实现的价值目标（如：新功能用户留存时长超过 5 分钟占比 50%），发布评论到对应团队的 Sprint Wiki 文档（如 FT1 Sprint 5 文档）；（1 分）
+
 【003】PO 在下一个 Sprint 结束前给出 Sprint 上线后价值目标达成情况反馈（如：第一周（10/14-10/20）新功能用户留存时长超过 5 分钟占比 80%；第二周（10/21-10/27）新功能用户留存时长超过 5 分钟占比 50%），发布评论到对应团队的 Sprint Wiki 文档（如 FT1 Sprint 5 文档）；（1 分）
+
 【004】团队完成 Sprint 目标； （2 分）
+
 【005】当前 Sprint 完成的故事点相较于上一个 Sprint 有增加（速率增加）；（2 分）
+
 【006】Sprint Review/Demo 成功: Demo 后不需要修 BUG 就能发布上线；（2 分）
+
 【007】Sprint 完成的 70% 以上故事点不能是之前 Sprint 未完成的遗留功能；（1 分）
 
 说明：【002】中的价值目标特指 PO 计划由 Sprint 开发的功能为公司或团队带来的价值所达成的目标，与 Sprint 目标不同。Sprint 目标指该 Sprint 应该达成的目标，在 Sprint 结束就应该能查验 Sprint 目标是否达成。
@@ -40,8 +45,11 @@ layout: post
 
 ### 奖励计算规则
 计算方式：y = 200x²
+
 其中：
+
 y = 可兑换奖励额度（或积分）
+
 x = 有效 Scrum 团队之星的数量
 
 | Scrum 团队之星(颗)  | 对应可兑换团队奖励  |
@@ -70,11 +78,17 @@ x = 有效 Scrum 团队之星的数量
 4. 本规则可能会根据实际运行情况作调整；
 
 说明：
+
 • 【Sprint Star】与【Sprint 最佳搭档】不能同时获得，【Sprint Star】的评估不受【Sprint 最佳搭档】评选条件影响；
+
 • 若出现多个人获得相同最高票数，则 Scrum Master 与其他人再次对获得最高票数的人重新投票，选出最高票数为 【Sprint Star】；
+
 • 完整参与了整个 Sprint 的定义：完整参与 Sprint 的所有 Scrum 事件；
+
 • Scrum 事件：Product Backlog Refinement（PBR，产品待办列表梳理），Sprint Planning（计划会议），Daily Scrum（每日站会），Sprint Review/Demo（成果演示会议），Sprint Retrospective（回顾会议）；
+
 • 所有事件无缺席；
+
 • 所有事件无迟到，早退；
 
 ### 奖励规则
@@ -86,8 +100,11 @@ x = 有效 Scrum 团队之星的数量
 
 ### 奖励计算规则
 奖励计算方式：y = 4x²
-其中
+
+其中:
+
 y = 可兑换奖励额度（或积分）
+
 x = 有效 Sprint 之星的数量
 
 |Sprint 之星(颗)|对应可兑换奖励|

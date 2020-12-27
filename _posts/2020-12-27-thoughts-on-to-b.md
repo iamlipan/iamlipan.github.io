@@ -57,6 +57,7 @@ layout: post
 
 另外，关于 To B 线上运营的一些思路，还在艰难探索中，有进展后会再跟大家分享。
 
+-----------
 参考资料：
 
 [做To B，一定要避免9类错误！](https://mp.weixin.qq.com/s/p6IiW8OCfXMEiuCOFfr6Gw)

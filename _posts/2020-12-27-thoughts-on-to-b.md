@@ -4,7 +4,7 @@ author: 李攀
 layout: post
 ---
 
-近段时间思考 To B 的落地打法，总结和记录了一些观点，希望能给大家一些启发。
+> 近段时间思考 To B 的落地打法，总结和记录了一些观点，希望能给大家一些启发。
 
 ### 关于服务
 产品力和服务力是 To B 企业的基础，其中服务力更为根本，强大的服务支持是 To B 企业对客户的核心价值所在。比起纯产品宣传和销售，创造更多贴近客户需求的价值和给客户全方位的解决方案，才能构建企业服务的护城河。
@@ -59,8 +59,8 @@ layout: post
 
 参考资料：
 
-[远望资本程浩：做To B，一定要避免9类错误！](https://mp.weixin.qq.com/s/p6IiW8OCfXMEiuCOFfr6Gw)
+[做To B，一定要避免9类错误！](https://mp.weixin.qq.com/s/p6IiW8OCfXMEiuCOFfr6Gw)
 
-[投资视角看To B创业 | 钛资本研究院](https://mp.weixin.qq.com/s/7XiGA_b92eG-80bgIKhqrg)
+[投资视角看To B创业](https://mp.weixin.qq.com/s/7XiGA_b92eG-80bgIKhqrg)
 
 [万字长文梳理运营大神干嘉伟的to B心法](https://mp.weixin.qq.com/s/JUn85JFXbAbQqArjFNq2lg)

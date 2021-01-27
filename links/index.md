@@ -11,10 +11,7 @@ order:  2
 
 [聚会玩](http://juhuiwan.cn)
 
-[Zerob13's Page](http://zerob13.in)
-
-[阿拉伯的鞋匠](https://feikl.com)
-
-[Edison Hsu Blog](http://edisonhsu.com)
+[阿拉伯的鞋匠](https://heyuanfei.com/)
 
 [alphagao](http://alphagao.com)
+

@@ -8,10 +8,10 @@ layout: post
 
 但如何让云原生资源利用率更高，用更少的计算节点承载更多的实例，降低资源开销，提高服务的可用性，是我们一直在探索的。最近两年持续升温的 Serverless 具备弹性伸缩、按量计费、无需运维等优势，是解决上述问题非常好的方案之一。
 
-公有云厂商有很多 Serverless 解决方案和相关产品，包括函数计算， Serverless 应用引擎，Serverless 容器服务，弹性容器实例等等。调研和试用以后发现，很多产品屏蔽了底层的 Kubernete，更适合于没有 Kubernete 基础设施的团队来使用。一起长大从 2018 年就已经开始通过运用 Infrastructure As Code (IAC)  的方式使用云厂商的 Kubernete 基础设施，所以云厂商的上述 Serverless 解决方案产品对我们没有太多的帮助和价值。
+公有云厂商有很多 Serverless 解决方案和相关产品，包括函数计算， Serverless 应用引擎，Serverless 容器服务，弹性容器实例等等。调研和试用以后发现，很多产品屏蔽了底层的 Kubernete，更适合于没有 Kubernetes 基础设施的团队来使用。一起长大从 2018 年就已经开始通过运用 Infrastructure As Code (IAC)  的方式使用云厂商的 Kubernetes 基础设施，所以云厂商的上述 Serverless 解决方案产品对我们没有太多的帮助和价值。
 
 ## 选择
-因为一起长大的业务有着明显的波峰和波谷，我们选择了 Kubernete Serverless 虚拟节点的方案，阿里云 ECI 就是一种典型 Kubernetes 虚拟节点方案，对已经运行在 Kubernetes 上的服务其实没有实际差异，在高峰期弹性调度到 Serverless 虚拟节点会带来巨大的收益。
+因为一起长大的业务有着明显的波峰和波谷，我们选择了 Kubernetes Serverless 虚拟节点的方案，阿里云 ECI 就是一种典型 Kubernetes 虚拟节点方案，对已经运行在 Kubernetes 上的服务其实没有实际差异，在高峰期弹性调度到 Serverless 虚拟节点会带来巨大的收益。
 
 ## Kubernetes Serverless 虚拟节点
 虚拟节点并不是真实的节点，而是一种调度能力，它将标准 Kubernetes 集群中的 pod 调度到集群服务器节点之外的资源中。部署在虚拟节点上的 pod 具备一致的安全隔离性、网络隔离性、网络连通性，又具有无需预留资源，按量计费的特性，架构如下图：
@@ -29,11 +29,11 @@ layout: post
 理论上高峰期波峰部分使用 Serverless 可降低的成本为：(24C - 18C) / 24C = 25%，成本降低的效果是很明显的。
 
 ## 调度、扩容与缩容
-使用 Kubernete Serverless 虚拟节点，调度主要存在两个问题：一是扩容时创建 pod 基于何种调度策略调度到虚拟节点，二是缩容时应优先缩虚拟节点上的 pod。
+使用 Kubernetes Serverless 虚拟节点，调度主要存在两个问题：一是扩容时创建 pod 基于何种调度策略调度到虚拟节点，二是缩容时应优先缩虚拟节点上的 pod。
 
 阿里云支持添加 Annotations 来声明只使用普通节点的资源或者虚拟节点的 ECI 资源，或者在普通节点的资源不足时自动使用 ECI 资源，这已经可以满足大部分场景对弹性资源的需求了。
 
-除了调度到虚拟节点的能力外，我们还配合了 Kubernete 本身的 hpa 及 cronhpa 同时使用，来满足业务更灵活的需求。
+除了调度到虚拟节点的能力外，我们还配合了 Kubernetes 本身的 hpa 及 cronhpa 同时使用，来满足业务更灵活的需求。
 
 缩容时应优先缩虚拟节点上的 pod，这个是需要修改调度器的调度算法才能实现的。
 

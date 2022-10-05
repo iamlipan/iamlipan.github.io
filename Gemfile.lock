@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/flori/json.git
+  remote: https://github.com/flori/json.git
   revision: 7f4cfd853f2c919d854fb95548a19980feff17e8
   branch: v1.8
   specs:
@@ -14,8 +14,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2)
-    addressable (2.7.0)
-      public_suffix (>= 2.0.2, < 5.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs

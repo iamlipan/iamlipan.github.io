@@ -1,22 +1,61 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.title and page.url != "/" %}
+    {% assign page_title = page.title | append: " · " | append: site.title %}
+  {% else %}
+    {% assign page_title = site.title | append: " · " | append: site.tagline %}
+  {% endif %}
+
+  {% if page.description %}
+    {% assign page_desc = page.description %}
+  {% elsif page.layout == "post" %}
+    {% assign page_desc = page.content | strip_html | strip_newlines | truncate: 150 %}
+  {% else %}
+    {% assign page_desc = site.description %}
+  {% endif %}
+
+  {% assign canonical = page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url %}
+
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_desc | strip_html | escape }}">
+  <meta name="author" content="{{ site.author }}">
+  <link rel="canonical" href="{{ canonical }}">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+  <meta property="og:description" content="{{ page_desc | strip_html | escape }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="zh_CN">
+  {% if page.layout == "post" %}
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+    {% for cat in page.categories %}<meta property="article:section" content="{{ cat }}">
+    {% endfor %}
+  {% endif %}
+  {% if page.image %}<meta property="og:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}">{% endif %}
+  <meta name="twitter:card" content="summary">
+  {% if site.social.twitter %}<meta name="twitter:creator" content="@{{ site.social.twitter }}">{% endif %}
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112494148-1"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
+        href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-  gtag('config', 'UA-112494148-1');
+  <!-- 主题在样式生效前就定好，避免深色模式下的白屏闪烁 -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var dark = saved ? saved === 'dark'
+                         : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
   </script>
 </head>

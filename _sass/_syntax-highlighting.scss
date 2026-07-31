@@ -1,67 +1,75 @@
-/**
- * Syntax highlighting styles
- */
-.highlight {
-    background: #fff;
-    @extend %vertical-rhythm;
+// ─────────────────────────────────────────────────────────────
+//  代码高亮（Rouge）
+//  用变量定义 token 颜色，深浅两套共用同一份选择器。
+// ─────────────────────────────────────────────────────────────
+:root {
+  --hl-comment: #96907f;
+  --hl-keyword: #9c3a68;
+  --hl-string: #4d7a3d;
+  --hl-number: #b0402f;
+  --hl-func: #2f6b8f;
+  --hl-type: #8a6a1c;
+  --hl-punct: #6b6659;
+  --hl-name: #2d2b26;
+  --hl-error: #c0392b;
+  --hl-add: rgba(77, 122, 61, 0.12);
+  --hl-del: rgba(176, 64, 47, 0.12);
+}
 
-    .c     { color: #998; font-style: italic } // Comment
-    .err   { color: #a61717; background-color: #e3d2d2 } // Error
-    .k     { font-weight: bold } // Keyword
-    .o     { font-weight: bold } // Operator
-    .cm    { color: #998; font-style: italic } // Comment.Multiline
-    .cp    { color: #999; font-weight: bold } // Comment.Preproc
-    .c1    { color: #998; font-style: italic } // Comment.Single
-    .cs    { color: #999; font-weight: bold; font-style: italic } // Comment.Special
-    .gd    { color: #000; background-color: #fdd } // Generic.Deleted
-    .gd .x { color: #000; background-color: #faa } // Generic.Deleted.Specific
-    .ge    { font-style: italic } // Generic.Emph
-    .gr    { color: #a00 } // Generic.Error
-    .gh    { color: #999 } // Generic.Heading
-    .gi    { color: #000; background-color: #dfd } // Generic.Inserted
-    .gi .x { color: #000; background-color: #afa } // Generic.Inserted.Specific
-    .go    { color: #888 } // Generic.Output
-    .gp    { color: #555 } // Generic.Prompt
-    .gs    { font-weight: bold } // Generic.Strong
-    .gu    { color: #aaa } // Generic.Subheading
-    .gt    { color: #a00 } // Generic.Traceback
-    .kc    { font-weight: bold } // Keyword.Constant
-    .kd    { font-weight: bold } // Keyword.Declaration
-    .kp    { font-weight: bold } // Keyword.Pseudo
-    .kr    { font-weight: bold } // Keyword.Reserved
-    .kt    { color: #458; font-weight: bold } // Keyword.Type
-    .m     { color: #099 } // Literal.Number
-    .s     { color: #d14 } // Literal.String
-    .na    { color: #008080 } // Name.Attribute
-    .nb    { color: #0086B3 } // Name.Builtin
-    .nc    { color: #458; font-weight: bold } // Name.Class
-    .no    { color: #008080 } // Name.Constant
-    .ni    { color: #800080 } // Name.Entity
-    .ne    { color: #900; font-weight: bold } // Name.Exception
-    .nf    { color: #900; font-weight: bold } // Name.Function
-    .nn    { color: #555 } // Name.Namespace
-    .nt    { color: #000080 } // Name.Tag
-    .nv    { color: #008080 } // Name.Variable
-    .ow    { font-weight: bold } // Operator.Word
-    .w     { color: #bbb } // Text.Whitespace
-    .mf    { color: #099 } // Literal.Number.Float
-    .mh    { color: #099 } // Literal.Number.Hex
-    .mi    { color: #099 } // Literal.Number.Integer
-    .mo    { color: #099 } // Literal.Number.Oct
-    .sb    { color: #d14 } // Literal.String.Backtick
-    .sc    { color: #d14 } // Literal.String.Char
-    .sd    { color: #d14 } // Literal.String.Doc
-    .s2    { color: #d14 } // Literal.String.Double
-    .se    { color: #d14 } // Literal.String.Escape
-    .sh    { color: #d14 } // Literal.String.Heredoc
-    .si    { color: #d14 } // Literal.String.Interpol
-    .sx    { color: #d14 } // Literal.String.Other
-    .sr    { color: #009926 } // Literal.String.Regex
-    .s1    { color: #d14 } // Literal.String.Single
-    .ss    { color: #990073 } // Literal.String.Symbol
-    .bp    { color: #999 } // Name.Builtin.Pseudo
-    .vc    { color: #008080 } // Name.Variable.Class
-    .vg    { color: #008080 } // Name.Variable.Global
-    .vi    { color: #008080 } // Name.Variable.Instance
-    .il    { color: #099 } // Literal.Number.Integer.Long
+:root[data-theme="dark"] {
+  --hl-comment: #7d7768;
+  --hl-keyword: #e492b4;
+  --hl-string: #a3c684;
+  --hl-number: #e58063;
+  --hl-func: #82b4d8;
+  --hl-type: #d9bd6c;
+  --hl-punct: #a29c8e;
+  --hl-name: #ddd9d1;
+  --hl-error: #f07a6a;
+  --hl-add: rgba(163, 198, 132, 0.14);
+  --hl-del: rgba(229, 128, 99, 0.14);
+}
+
+.highlight {
+  background: transparent;
+  color: var(--hl-name);
+
+  .c, .cm, .c1, .cs, .cd, .cp, .cpf { color: var(--hl-comment); font-style: italic; }
+
+  .k, .kc, .kd, .kn, .kp, .kr, .kt, .kv { color: var(--hl-keyword); }
+  .o, .ow { color: var(--hl-keyword); }
+
+  .s, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .s1, .ss, .sa, .dl { color: var(--hl-string); }
+  .sr { color: var(--hl-string); }
+
+  .m, .mf, .mh, .mi, .mo, .mb, .mx, .il { color: var(--hl-number); }
+  .no, .nb, .bp, .l, .ld { color: var(--hl-number); }
+
+  .nf, .fm, .nd { color: var(--hl-func); }
+
+  .nc, .nn, .ne, .nt { color: var(--hl-type); }
+
+  .p, .pi { color: var(--hl-punct); }
+
+  .n, .na, .ni, .nl, .nx, .py, .nv, .vc, .vg, .vi, .vm { color: var(--hl-name); }
+
+  .err, .gr { color: var(--hl-error); }
+
+  .gd { background: var(--hl-del); }
+  .gi { background: var(--hl-add); }
+  .ge { font-style: italic; }
+  .gs { font-weight: 600; }
+  .gh, .gu { color: var(--hl-func); font-weight: 600; }
+  .gt, .gp { color: var(--hl-comment); }
+
+  // 行号表格（kramdown/rouge 的 linenos 模式）
+  .lineno, .gl {
+    color: var(--hl-comment);
+    opacity: 0.7;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  table td { padding: 0; border: 0; }
+  table pre { margin: 0; }
 }

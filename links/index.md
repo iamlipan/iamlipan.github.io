@@ -1,17 +1,17 @@
 ---
-id: 2
-title: 别点我 
+title: 别点我
 author: 李攀
 layout: page
-order:  2
-
+intro: 说了别点，还是点了。
+order: 2
 ---
 
-[一起长大](https://kid17.com)
+## 我做的东西
 
-[聚会玩](http://juhuiwan.cn)
+- [一起长大](https://kid17.com) —— 现在在做的事
+- [聚会玩](http://juhuiwan.cn) —— 第一次创业
 
-[阿拉伯的鞋匠](https://heyuanfei.com/)
+## 朋友们
 
-[alphagao](http://alphagao.com)
-
+- [阿拉伯的鞋匠](https://heyuanfei.com/)
+- [alphagao](http://alphagao.com)

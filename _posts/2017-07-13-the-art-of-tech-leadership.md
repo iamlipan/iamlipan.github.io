@@ -2,6 +2,8 @@
 title: 技术领导力的艺术
 author: 李攀
 layout: post
+categories: [team]
+tags: [领导力, 管理]
 ---
 
 本月初参加了极客帮组织的GTLC（全球技术领导力峰会），收货颇丰，20多场演讲基本都比较务实，干货有不少。

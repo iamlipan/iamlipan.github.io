@@ -2,6 +2,8 @@
 title: illegal guard expression
 author: 李攀
 layout: post
+categories: [tech]
+tags: [Erlang]
 ---
 今天遇到一个奇怪的问题：
 

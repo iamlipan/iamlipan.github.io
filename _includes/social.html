@@ -1,0 +1,40 @@
+<div class="social">
+  {% if site.social.twitter %}
+    <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" rel="me noopener" aria-label="Twitter" title="Twitter">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 3h3.3l-7.2 8.3L23 21h-6.6l-5.2-6.8L5.3 21H2l7.5-8.6L1.6 3h6.8l4.8 6.4L18.9 3zm-1.2 16h1.8L6.4 4.9H4.5L17.7 19z"/></svg>
+    </a>
+  {% endif %}
+  {% if site.social.github %}
+    <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="me noopener" aria-label="GitHub" title="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+    </a>
+  {% endif %}
+  {% if site.social.weibo %}
+    <a href="https://weibo.com/{{ site.social.weibo }}" target="_blank" rel="me noopener" aria-label="微博" title="微博">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.9 19.9c-3.9 0-7.1-1.9-7.1-4.4 0-1.3.8-2.8 2.3-4.2 2-1.9 4.3-2.7 5.2-1.8.4.4.4 1.1.1 1.9-.2.4.3.2.3.2 1.6-.7 3-.7 3.5.1.3.4.2 1 0 1.6-.1.3 0 .4.2.4 1 .3 2 1 2 2.3 0 2.1-3 3.9-6.5 3.9zm-.5-6.6c-1.9-.2-3.6.8-3.8 2.2-.2 1.4 1.2 2.7 3.1 2.9 1.9.2 3.6-.7 3.8-2.1.2-1.4-1.2-2.7-3.1-3zm-.3 1.2c.9.1 1.6.8 1.5 1.6-.1.8-.9 1.3-1.8 1.2-.9-.1-1.6-.8-1.5-1.6.1-.8.9-1.3 1.8-1.2zM18.6 11c-.4 0-.8-.3-.8-.8 0-1.5-1.6-2.7-3.5-2.7-.3 0-.6 0-.9.1-.4.1-.9-.2-1-.6-.1-.4.2-.9.6-1 .4-.1.8-.1 1.3-.1 2.8 0 5.1 1.9 5.1 4.3 0 .5-.4.8-.8.8zm2.6 1.3c-.5 0-.9-.4-.9-.9 0-3.1-2.9-5.7-6.4-5.7-.6 0-1.1.1-1.7.2-.5.1-1-.2-1.1-.7-.1-.5.2-1 .7-1.1.7-.2 1.4-.2 2.1-.2 4.5 0 8.2 3.4 8.2 7.5 0 .5-.4.9-.9.9z"/></svg>
+    </a>
+  {% endif %}
+  {% if site.social.linkedin %}
+    <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="me noopener" aria-label="LinkedIn" title="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 002.5 6a2.5 2.5 0 002.48 2.5A2.5 2.5 0 007.5 6a2.5 2.5 0 00-2.52-2.5zM3 21h4V9H3v12zm7 0h3.8v-6.4c0-1.7.3-3.4 2.4-3.4 2.1 0 2.1 1.9 2.1 3.5V21H22v-7c0-3.5-.8-5.4-4-5.4-1.6 0-2.9.8-3.4 1.8h-.1V9H10v12z"/></svg>
+    </a>
+  {% endif %}
+  {% if site.social.instagram %}
+    <a href="https://instagram.com/{{ site.social.instagram }}" target="_blank" rel="me noopener" aria-label="Instagram" title="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+    </a>
+  {% endif %}
+  {% if site.social.wechat_qr %}
+    <a href="{{ site.social.wechat_qr | prepend: site.baseurl }}" target="_blank" rel="noopener" aria-label="微信" title="微信">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.7 3C4.9 3 1.8 5.5 1.8 8.6c0 1.8 1 3.4 2.6 4.4l-.7 2 2.3-1.2c.8.2 1.7.4 2.7.4h.6a5 5 0 01-.2-1.4c0-3 2.9-5.4 6.5-5.4h.6C15.6 4.9 12.5 3 8.7 3zM6.3 7.6a.9.9 0 110-1.8.9.9 0 010 1.8zm4.8 0a.9.9 0 110-1.8.9.9 0 010 1.8z"/><path d="M22.2 13.3c0-2.6-2.6-4.7-5.8-4.7s-5.8 2.1-5.8 4.7c0 2.6 2.6 4.7 5.8 4.7.7 0 1.4-.1 2-.3l1.9 1-.5-1.7c1.5-.9 2.4-2.2 2.4-3.7zm-7.7-.8a.8.8 0 110-1.6.8.8 0 010 1.6zm3.9 0a.8.8 0 110-1.6.8.8 0 010 1.6z"/></svg>
+    </a>
+  {% endif %}
+  {% if site.email %}
+    <a href="mailto:{{ site.email }}" aria-label="邮箱" title="邮箱">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M3 6.5l9 6 9-6"/></svg>
+    </a>
+  {% endif %}
+  <a href="{{ "/feed.xml" | prepend: site.baseurl }}" aria-label="RSS" title="RSS">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="6.2" cy="17.8" r="2.2"/><path d="M4 10.3v3a6.4 6.4 0 016.4 6.4h3C13.4 14.4 9.2 10.3 4 10.3z"/><path d="M4 4v3c7.2 0 12.9 5.8 12.9 12.9h3C19.9 11.1 12.8 4 4 4z"/></svg>
+  </a>
+</div>

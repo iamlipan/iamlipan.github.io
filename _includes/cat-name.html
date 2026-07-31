@@ -1,0 +1,5 @@
+{%- comment -%}
+把分类 slug 译成中文名。用法：{% include cat-name.html slug=post.categories.first %}
+{%- endcomment -%}
+{%- assign cat_meta = site.categories_meta | where: "slug", include.slug | first -%}
+{%- if cat_meta -%}{{ cat_meta.name }}{%- else -%}{{ include.slug }}{%- endif -%}

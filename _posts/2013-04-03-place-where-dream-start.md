@@ -2,6 +2,8 @@
 title: 梦开始的地方
 author: 李攀
 layout: post
+categories: [life]
+tags: [职场, 4399]
 ---
 时间有时候总是吻合得恰到好处。
 

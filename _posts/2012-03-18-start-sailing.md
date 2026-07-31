@@ -2,6 +2,8 @@
 title: 启程
 author: 李攀
 layout: post
+categories: [life]
+tags: [随笔, 职场]
 ---
 2012年3月18日 T99次列车 上海-广州
 

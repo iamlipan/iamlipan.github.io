@@ -2,6 +2,8 @@
 title: 聚会玩错过了狼人杀吗？
 author: 李攀
 layout: post
+categories: [startup]
+tags: [聚会玩, 产品, 反思]
 ---
 
 最近视频狼人杀很火，好多朋友问我聚会玩当初为什么没做狼人杀。

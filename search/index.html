@@ -1,0 +1,115 @@
+---
+layout: default
+title: 搜索
+---
+<div class="page">
+  <header class="page-header">
+    <h1 class="page-title">搜索</h1>
+    <p class="page-intro">在全部 {{ site.posts | size }} 篇文章的标题、正文和标签里找。纯前端，不经过服务端。</p>
+  </header>
+
+  <div class="search-field">
+    <label class="visually-hidden" for="q">搜索关键词</label>
+    <input class="search-input" id="q" type="search" autocomplete="off" autofocus
+           placeholder="试试「敏捷」「Kubernetes」「创业」…">
+  </div>
+
+  <p class="search-status" id="search-status" role="status">正在加载索引…</p>
+  <div id="search-results"></div>
+</div>
+
+<script>
+  (function () {
+    var input = document.getElementById('q');
+    var status = document.getElementById('search-status');
+    var results = document.getElementById('search-results');
+    var CATS = {{ site.categories_meta | jsonify }};
+    var catName = {};
+    CATS.forEach(function (c) { catName[c.slug] = c.name; });
+    var docs = null;
+
+    function escapeHtml(s) {
+      return s.replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
+    // 在纯文本里高亮关键词：先切片再逐段转义，避免注入
+    function highlight(text, needle) {
+      var lower = text.toLowerCase();
+      var q = needle.toLowerCase();
+      var out = '';
+      var from = 0;
+      var at;
+      while ((at = lower.indexOf(q, from)) !== -1) {
+        out += escapeHtml(text.slice(from, at)) + '<mark>' + escapeHtml(text.slice(at, at + q.length)) + '</mark>';
+        from = at + q.length;
+      }
+      return out + escapeHtml(text.slice(from));
+    }
+
+    function snippet(body, needle) {
+      var at = body.toLowerCase().indexOf(needle.toLowerCase());
+      if (at === -1) return escapeHtml(body.slice(0, 110)) + '…';
+      var start = Math.max(0, at - 40);
+      var text = body.slice(start, start + 150);
+      return (start > 0 ? '…' : '') + highlight(text, needle) + '…';
+    }
+
+    function score(doc, q) {
+      var t = doc.title.toLowerCase();
+      if (t.indexOf(q) !== -1) return 3;
+      if ((doc.tags || []).join(' ').toLowerCase().indexOf(q) !== -1) return 2;
+      if (doc.body.toLowerCase().indexOf(q) !== -1) return 1;
+      return 0;
+    }
+
+    function render(query) {
+      var q = query.trim().toLowerCase();
+      results.innerHTML = '';
+      if (!q) {
+        status.textContent = docs ? '输入关键词开始搜索。' : '正在加载索引…';
+        return;
+      }
+      if (!docs) return;
+
+      var hits = docs
+        .map(function (d) { return { doc: d, s: score(d, q) }; })
+        .filter(function (h) { return h.s > 0; })
+        .sort(function (a, b) { return b.s - a.s || (a.doc.date < b.doc.date ? 1 : -1); });
+
+      status.textContent = hits.length ? '找到 ' + hits.length + ' 篇。' : '没有找到「' + query.trim() + '」相关的文章。';
+
+      var frag = document.createDocumentFragment();
+      hits.forEach(function (h) {
+        var d = h.doc;
+        var el = document.createElement('article');
+        el.className = 'search-hit';
+        el.innerHTML =
+          '<a class="search-hit-title" href="' + encodeURI(d.url) + '">' + highlight(d.title, query.trim()) + '</a>' +
+          '<p class="search-hit-meta">' + escapeHtml(d.date) +
+            (d.cat && catName[d.cat] ? ' · ' + escapeHtml(catName[d.cat]) : '') + '</p>' +
+          '<p class="search-hit-snippet">' + snippet(d.body, query.trim()) + '</p>';
+        frag.appendChild(el);
+      });
+      results.appendChild(frag);
+    }
+
+    fetch('{{ "/search.json" | prepend: site.baseurl }}')
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        docs = data;
+        var params = new URLSearchParams(location.search);
+        var preset = params.get('q');
+        if (preset) { input.value = preset; }
+        render(input.value);
+      })
+      .catch(function () { status.textContent = '索引加载失败，刷新一下试试。'; });
+
+    var timer;
+    input.addEventListener('input', function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () { render(input.value); }, 120);
+    });
+  })();
+</script>

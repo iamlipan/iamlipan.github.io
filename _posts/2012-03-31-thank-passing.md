@@ -2,6 +2,8 @@
 title: 感谢过客
 author: 李攀
 layout: post
+categories: [life]
+tags: [随笔]
 ---
 一生太短，擦肩无数。
 

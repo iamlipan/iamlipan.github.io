@@ -1,20 +1,80 @@
-# Short description (goes below the title; it will also be used in the RSS feed)
-title: 李攀的博客
+# ── 站点信息 ────────────────────────────────────────────────
+title: 李攀
+subtitle: 李攀的博客
+description: 别有妖妍胜桃李，攀来折去亦成蹊。
+tagline: 写技术、团队与创业，也写一点生活。
+author: 李攀
+email: i@lipan.me
+role: 「一起长大」创始人兼 CTO
 
-description: 别有妖妍胜桃李,攀来折去亦成蹊。
+# 首页名片上的标签
+facts:
+  - 程序员（无证）
+  - 手风琴十级
+  - 世界合唱比赛金奖
+  - 上马 & 广马完赛
+  - 印度洋 10 米深潜
+  - 二世古滑雪
+  - 每年骑行 2000+ 公里
 
-sign: Written by Alan with ❤️ 
+sign: Written by Alan with ❤️
+beian: 沪ICP备15040476号
 
-beian: 沪ICP备15040476号 
-
-# The URL of your actual domain. This will be used to make absolute links in the RSS feed.
+# 实际域名，用于 RSS / sitemap / OG 的绝对链接
 url: https://lipan.me
+baseurl: ""
 
-paginate: 10
+# ── 社交账号 ────────────────────────────────────────────────
+social:
+  twitter: iamlipan
+  github: iamlipan
+  weibo: "206053530"
+  instagram: iamlipan
+  linkedin: alan-li-65297b3a
+  wechat_qr: /img/QR.jpg
 
-paginate_path: "/page:num"
+# ── 文章分类（顺序决定筛选器与归档页的排列） ──────────────────
+categories_meta:
+  - slug: tech
+    name: 技术
+    desc: 云原生、Erlang、工具链与踩过的坑
+  - slug: team
+    name: 团队管理
+    desc: 敏捷、领导力、组织与文化
+  - slug: startup
+    name: 创业
+    desc: 两次创业里学到的东西
+  - slug: life
+    name: 随笔
+    desc: 路上的记录
 
-# Gems
-gems: [jekyll-paginate]
+# 首页展示的最新文章数量
+home_posts: 12
+
+# 中文阅读速度（字/分钟），用于估算阅读时长
+reading_speed: 400
+
+# ── 构建 ────────────────────────────────────────────────────
+# 现有文章 URL 形如 /2022/06/10/slug.html。必须显式固定 permalink：
+# Jekyll 默认的 date 格式含 :categories，给文章补分类后会改变所有旧链接。
+permalink: /:year/:month/:day/:title.html
 
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - .sass-cache
+  - .jekyll-cache

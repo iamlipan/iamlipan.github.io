@@ -2,6 +2,8 @@
 title: 极限编程(XP)简介
 author: 李攀
 layout: post
+categories: [team]
+tags: [敏捷, 极限编程]
 ---
 
 > 这篇文章是我最近在团队内做极限编程分享的内容整理。

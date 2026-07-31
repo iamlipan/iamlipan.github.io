@@ -1,0 +1,23 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  {% for post in site.posts %}
+  <url>
+    <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+  </url>
+  {% endfor %}
+  {% comment %}首页已在上面单独列出，这里跳过，避免重复{% endcomment %}
+  {% for p in site.pages %}{% if p.sitemap != false and p.layout and p.url != "/" %}
+  <url>
+    <loc>{{ p.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}</loc>
+  </url>
+  {% endif %}{% endfor %}
+</urlset>

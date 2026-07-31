@@ -2,6 +2,8 @@
 title: MySQL识别符，反勾号的问题
 author: 李攀
 layout: post
+categories: [tech]
+tags: [MySQL]
 ---
 数据库、表、索引、列和别名是识别符。
 

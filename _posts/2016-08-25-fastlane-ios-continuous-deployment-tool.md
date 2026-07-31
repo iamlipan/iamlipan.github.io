@@ -2,6 +2,8 @@
 title: fastlane - iOS持续部署神器
 author: 李攀
 layout: post
+categories: [tech]
+tags: [iOS, 持续交付, 工具]
 ---
 先说一个严肃的问题，我们为什么需要持续部署（Continuous Deployment）？
 

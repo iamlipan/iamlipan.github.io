@@ -1,0 +1,20 @@
+{%- comment -%}
+按年份分组的文章列表。用法：{% include entry-list.html posts=site.posts %}
+每个 li 带 data-cat，供归档页的分类筛选使用。
+{%- endcomment -%}
+{%- assign year_groups = include.posts | group_by_exp: "p", "p.date | date: '%Y'" -%}
+{% for group in year_groups %}
+  <section class="year-group" data-year="{{ group.name }}">
+    <h2 class="year-label"><span>{{ group.name }}</span></h2>
+    <ul class="entry-list">
+      {% for post in group.items %}
+        {%- assign cat = post.categories | first -%}
+        <li class="entry" data-cat="{{ cat }}">
+          <span class="entry-date">{{ post.date | date: "%m.%d" }}</span>
+          <a class="entry-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          {% if cat %}<span class="entry-cat">{% include cat-name.html slug=cat %}</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}

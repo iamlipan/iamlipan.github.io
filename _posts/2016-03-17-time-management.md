@@ -2,6 +2,8 @@
 title: 时间管理
 author: 李攀  
 layout: post  
+categories: [team]
+tags: [效率, 时间管理]
 ---  
 
 ## 先举一个非常简单的例子

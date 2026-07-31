@@ -2,6 +2,8 @@
 title: 一起长大敏捷实践 - 激励篇
 author: 李攀
 layout: post
+categories: [team]
+tags: [敏捷, 激励, 一起长大]
 ---
 关于团队激励，我们设计了一套适合敏捷团队，可操作性极强，实用且有趣的方案。
 

@@ -2,6 +2,8 @@
 title: 离职序
 author: 李攀
 layout: post
+categories: [life]
+tags: [百度, 职场]
 ---
 这几天的经历了，仿佛过了几个月，却说不上为什么。
 

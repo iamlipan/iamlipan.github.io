@@ -2,6 +2,8 @@
 title: 再见，百度。
 author: 李攀
 layout: post
+categories: [life]
+tags: [百度, 职场]
 ---
 本来计划的last day是周五，由于HR周五请假，所有手续不得不提前到周四办理。虽仅一天的提前量，但着实没有丝毫心里准备，有点让我措手不及。
 

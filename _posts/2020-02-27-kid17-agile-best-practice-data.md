@@ -2,6 +2,8 @@
 title: 一起长大敏捷实践 - 数据篇
 author: 李攀
 layout: post
+categories: [team]
+tags: [敏捷, 数据, 一起长大]
 ---
 
 > 团队效率是否在逐渐提升，让数据来说话

@@ -1,46 +1,39 @@
 ---
-id: 1
-title:  关于
+title: 关于
 author: 李攀
 layout: page
-order:  1
-
+intro: 程序员、跑者、两次创业者。
+order: 1
 ---
-## 李攀
 
-- 🦍程序员（无证）
-- 🎼手风琴十级（无证）
-- 🎤第四届世界合唱比赛金奖成员（有证）
-- 🏃多次上海国际马拉松和广州马拉松参赛选手（有证）
-- 🤿印度洋 10 米深潜 1 小时纪录
-- 🎿参加日本二世古专业赛道滑雪
-- 🚴‍♀️每年骑行 2000+ 公里
-- 💪国家二级运动员，擅长游泳、乒乓球、足球、短跑等各类运动
+## 我是谁
 
+- 🦍 程序员（无证）
+- 🎼 手风琴十级（无证）
+- 🎤 第四届世界合唱比赛金奖成员（有证）
+- 🏃 多次上海国际马拉松和广州马拉松参赛选手（有证）
+- 🤿 印度洋 10 米深潜 1 小时纪录
+- 🎿 参加日本二世古专业赛道滑雪
+- 🚴 每年骑行 2000+ 公里
+- 💪 国家二级运动员，擅长游泳、乒乓球、足球、短跑等各类运动
 
-### 职业经历：
+## 职业经历
 
 - [「一起长大」][9]创始人兼 CTO
 - [「Wind 资讯」][10]技术总监
 - [「聚会玩」][1]创始人兼 CTO
-- 前[4399][2] [手游][3]服务器端架构师，主程序
-- 前[百度][4] [「手机浏览器」][5] Android 客户端核心研发工程师
+- 前 [4399][2] [手游][3]服务器端架构师，主程序
+- 前[百度][4][「手机浏览器」][5] Android 客户端核心研发工程师
 
-### 教育经历：
+## 教育经历
 
 - [「同济大学」][6]计算机科学与技术系工学硕士
 - [「华东师范大学」][7]计算机科学与技术系工学学士
-- ️国家级示范性高中[「绵阳中学」][8]
+- 国家级示范性高中[「绵阳中学」][8]
 
+## 找到我
 
-<a href="https://twitter.com/iamlipan" target="_blank"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
-<a href="https://weibo.com/206053530" target="_blank"><i class="fa fa-weibo fa-4x" aria-hidden="true"></i></a>
-<a href="../img/QR.jpg" target="_blank"><i class="fa fa-weixin fa-4x" aria-hidden="true"></i></a>
-<a href="https://www.linkedin.com/in/alan-li-65297b3a" target="_blank"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
-<a href="https://instagram.com/iamlipan" target="_blank"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
-<a href="https://www.facebook.com/li.pan.7965" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
-<a href="https://plus.google.com/104974253379401017230" target="_blank"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a>
-<a href="mailto:i@lipan.me"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></a>
+{% include social.html %}
 
 [1]:http://juhuiwan.cn "聚会玩"
 [2]:http://www.4399.com "4399"

@@ -2,6 +2,8 @@
 title: 不要等到他们都走不动了才来后悔
 author: 李攀
 layout: post
+categories: [life]
+tags: [家人, 随笔]
 ---
 有一次你问我说：  
 “你的梦想是什么？”  

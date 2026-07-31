@@ -1,12 +1,28 @@
 <footer class="site-footer">
+  <div class="shell">
+    <div>
+      <p class="footer-motto">{{ site.description }}</p>
+      <p>{{ site.sign }} · © 2012–{{ site.time | date: "%Y" }} {{ site.author }}</p>
+      {% if site.beian %}<p>{{ site.beian }}</p>{% endif %}
+    </div>
 
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col-r  footer-col-3">
-        <p class="text">{{ site.description }}<br />{{ site.sign}}</p>
-      </div>
+    <div class="footer-links">
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+      <a href="{{ "/archive/" | prepend: site.baseurl }}">归档</a>
+      <a href="mailto:{{ site.email }}">邮箱</a>
     </div>
   </div>
-
 </footer>
+
+<script>
+  (function () {
+    var toggle = document.querySelector('.theme-toggle');
+    if (!toggle) return;
+    toggle.addEventListener('click', function () {
+      var root = document.documentElement;
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  })();
+</script>

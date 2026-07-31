@@ -2,6 +2,8 @@
 title: 「Netflix 文化」笔记 
 author: 李攀
 layout: post
+categories: [team]
+tags: [文化, 读书笔记]
 ---
 最近读了 Netflix 文化, 启发很大，摘抄了一些作为读书笔记，如下。
 

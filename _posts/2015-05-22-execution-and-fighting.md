@@ -2,6 +2,8 @@
 title: 执行力和战斗力
 author: 李攀
 layout: post
+categories: [team]
+tags: [团队, 执行力]
 ---
 一天早上突然看到表哥在朋友圈发了一张图片：
 ![image](http://pic.yupoo.com/aixixili/EFaI0uoH/medish.jpg)

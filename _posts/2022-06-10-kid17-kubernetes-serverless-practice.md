@@ -2,6 +2,8 @@
 title: 一起长大 Kubernetes Serverless 实践
 author: 李攀
 layout: post
+categories: [tech]
+tags: [云原生, Kubernetes, Serverless, 一起长大]
 ---
 ## 背景
 一起长大服务端技术架构一直跟随着云原生的发展方向，云原生让我们适应了业务高弹性的场景，满足了业务高峰的需求。

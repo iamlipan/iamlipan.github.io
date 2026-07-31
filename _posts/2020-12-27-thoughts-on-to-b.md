@@ -2,6 +2,8 @@
 title: 关于 To B 的一些落地打法思考
 author: 李攀
 layout: post
+categories: [startup]
+tags: [To B, 产品]
 ---
 
 > 近段时间思考 To B 的落地打法，总结和记录了一些观点，希望能给大家一些启发。

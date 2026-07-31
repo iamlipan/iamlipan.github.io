@@ -1,0 +1,73 @@
+---
+layout: default
+title: 归档
+intro: 从 2012 年至今的全部文章。
+---
+<div class="page">
+  <header class="page-header">
+    <h1 class="page-title">归档</h1>
+    {% assign oldest = site.posts | last %}
+    <p class="page-intro">{{ site.posts | size }} 篇文章，从 {{ oldest.date | date: "%Y" }} 年写到现在。</p>
+  </header>
+
+  <div class="chips" role="group" aria-label="按分类筛选">
+    <button class="chip" type="button" data-filter="all" aria-pressed="true">
+      全部<span class="chip-count">{{ site.posts | size }}</span>
+    </button>
+    {% for cat in site.categories_meta %}
+      {% assign in_cat = site.posts | where_exp: "p", "p.categories contains cat.slug" %}
+      {% if in_cat.size > 0 %}
+        <button class="chip" type="button" data-filter="{{ cat.slug }}" aria-pressed="false" title="{{ cat.desc }}">
+          {{ cat.name }}<span class="chip-count">{{ in_cat | size }}</span>
+        </button>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="archive-list">
+    {% include entry-list.html posts=site.posts %}
+  </div>
+
+  <p class="filter-empty" id="archive-empty" hidden>这个分类下还没有文章。</p>
+</div>
+
+<script>
+  (function () {
+    var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+    var groups = Array.prototype.slice.call(document.querySelectorAll('#archive-list .year-group'));
+    var empty = document.getElementById('archive-empty');
+    if (!chips.length) return;
+
+    function apply(filter) {
+      var total = 0;
+      groups.forEach(function (group) {
+        var shown = 0;
+        Array.prototype.forEach.call(group.querySelectorAll('.entry'), function (entry) {
+          var hit = filter === 'all' || entry.getAttribute('data-cat') === filter;
+          entry.hidden = !hit;
+          if (hit) shown++;
+        });
+        group.hidden = shown === 0;
+        total += shown;
+      });
+      empty.hidden = total > 0;
+      chips.forEach(function (chip) {
+        chip.setAttribute('aria-pressed', chip.getAttribute('data-filter') === filter ? 'true' : 'false');
+      });
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var filter = chip.getAttribute('data-filter');
+        apply(filter);
+        history.replaceState(null, '', filter === 'all' ? location.pathname : '#' + filter);
+      });
+    });
+
+    // 支持从文章页跳转过来的 /archive/#tech
+    var hash = location.hash.replace('#', '');
+    if (hash && chips.some(function (c) { return c.getAttribute('data-filter') === hash; })) {
+      apply(hash);
+    }
+  })();
+</script>

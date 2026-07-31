@@ -2,6 +2,8 @@
 title: Scrum 实践 - 我们是如何做敏捷开发的
 author: 李攀
 layout: post
+categories: [team]
+tags: [敏捷, Scrum]
 ---
 
 > 互联网团队用 scrum 做敏捷开发的不少，介绍一下我们团队的 scrum 实践。

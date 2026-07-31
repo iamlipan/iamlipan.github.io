@@ -1,15 +1,56 @@
 ---
 layout: default
 ---
-<div class="post">
+{%- comment -%}
+中文按字数估算阅读时长（site.reading_speed 字/分钟），先剔除空白再计数。
+{%- endcomment -%}
+{%- assign plain = content | strip_html | strip_newlines -%}
+{%- assign chars = plain | replace: " ", "" | size -%}
+{%- assign half = site.reading_speed | divided_by: 2 -%}
+{%- assign minutes = chars | plus: half | divided_by: site.reading_speed -%}
+{%- if minutes < 1 -%}{%- assign minutes = 1 -%}{%- endif -%}
+{%- assign cat = page.categories | first -%}
 
+<article class="post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y 年 %-m 月 %-d 日" }}</time>
+      {% if cat %}
+        <span class="sep">/</span>
+        <a class="post-cat" href="{{ "/archive/#" | append: cat | prepend: site.baseurl }}">{% include cat-name.html slug=cat %}</a>
+      {% endif %}
+      <span class="sep">/</span>
+      <span>{{ chars }} 字</span>
+      <span class="sep">/</span>
+      <span>约 {{ minutes }} 分钟</span>
+    </p>
   </header>
 
-  <article class="post-content">
+  <div class="prose">
     {{ content }}
-  </article>
+  </div>
 
-</div>
+  {% if page.tags and page.tags.size > 0 %}
+    <div class="post-tags">
+      {% for tag in page.tags %}
+        <a href="{{ "/search/?q=" | append: tag | prepend: site.baseurl }}">#{{ tag }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <nav class="post-nav" aria-label="上下篇">
+    <div class="post-nav-item is-prev">
+      {% if page.previous %}
+        <span class="label">上一篇</span>
+        <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a>
+      {% endif %}
+    </div>
+    <div class="post-nav-item is-next">
+      {% if page.next %}
+        <span class="label">下一篇</span>
+        <a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a>
+      {% endif %}
+    </div>
+  </nav>
+</article>

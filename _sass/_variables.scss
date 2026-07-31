@@ -1,0 +1,30 @@
+// ─────────────────────────────────────────────────────────────
+//  字体 / 尺度
+//  中文正文用系统无衬线（PingFang 观感最好），标题用衬线拉开层次。
+// ─────────────────────────────────────────────────────────────
+$font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+            "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+$font-serif: Georgia, "Songti SC", "Source Han Serif SC", "Noto Serif CJK SC",
+             "Times New Roman", serif;
+$font-mono: ui-monospace, SFMono-Regular, "SF Mono", "JetBrains Mono", Menlo,
+            Consolas, "Liberation Mono", monospace;
+
+$size-base: 17px;
+$size-sm: 14px;
+$size-xs: 12.5px;
+$line-height: 1.85;          // 中文需要比英文更松
+
+$measure: 42rem;             // 正文可读宽度
+$shell: 48rem;               // 页面外壳宽度
+$gutter: 1.5rem;
+
+$bp-palm: 640px;
+$bp-lap: 900px;
+
+@mixin palm {
+  @media screen and (max-width: $bp-palm) { @content; }
+}
+
+@mixin lap-and-up {
+  @media screen and (min-width: $bp-palm + 1) { @content; }
+}

@@ -2,6 +2,8 @@
 title: 最近发现的几个优秀库
 author: 李攀
 layout: post
+categories: [tech]
+tags: [开源, 工具]
 ---
 
 最近几天发现几个有用的库，以后产品上一定能用得上，记录一下。

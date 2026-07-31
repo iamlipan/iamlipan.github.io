@@ -2,6 +2,8 @@
 title: 一起长大敏捷实践 - 工具篇
 author: 李攀
 layout: post
+categories: [team]
+tags: [敏捷, 工具, 一起长大]
 ---
 
 > 工欲善其事，必先利其器。
